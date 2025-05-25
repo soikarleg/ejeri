@@ -50,6 +50,18 @@ class ClientController
         header('Location: /login');
         exit;
     }
+    public function preLogout()
+    {
+                require_once __DIR__ . '/../classes/Auth.php';
+        Auth::requireAuth();
+        $client_id = $_SESSION['client_id'];
+        $sidemenu = $this->getSidemenuData($client_id);
+        $nom = $sidemenu['client']['nom'] ?? '';
+        $prenom = $sidemenu['client']['prenom'] ?? '';
+        $adresses = $sidemenu['adresses'];
+        $telephones = $sidemenu['telephones'];
+        require __DIR__ . '/../views/pre_logout.php';
+    }
     public function devis()
     {
         require_once __DIR__ . '/../classes/Auth.php';

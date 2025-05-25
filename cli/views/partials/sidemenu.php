@@ -44,6 +44,7 @@
                 <a href="/modifier_contact?action=ajout_telephone&id=<?= htmlspecialchars($_SESSION['client_id']) ?>" class="small">Ajouter votre numéro de téléphone</a>
             </p>
         <?php endif; ?>
-        <a href="/logout" class="text-secondary">Déconnexion</a>
+        <p class="mt-4"><a href="/pre_logout" class="text-warning mt-4">Déconnexion</a></p> 
+        
     </div>
 </div>

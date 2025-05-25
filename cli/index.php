@@ -39,6 +39,9 @@ switch ($action) {
     case 'logout':
         $controller->logout();
         break;
+        case 'pre_logout':
+        $controller->preLogout();
+        break;
     case 'devis':
         $controller->devis();
         break;
