@@ -1,0 +1,28 @@
+{
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "python.formatting.provider": "none",
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#598fc4",
+    "activityBar.background": "#598fc4",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#8d3260",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#598fc4",
+    "statusBar.background": "#3d76ad",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#598fc4",
+    "statusBarItem.remoteBackground": "#3d76ad",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#3d76ad",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#3d76ad99",
+    "titleBar.inactiveForeground": "#e7e7e799",
+    "tab.activeBorder": "#598fc4"
+  },
+  "peacock.color": "#3d76ad",
+  "bitoAI.codeCompletion.enableAutoCompletion": false
+}

@@ -1,0 +1,55 @@
+[2023-12-03_13-45-15] Array
+(
+    [content] => Array
+        (
+            [item_id] => 1234567890
+            [status] => 0
+            [user_uuid] => 9a95b38f-f98b-417a-988b-9d0d584893e7
+        )
+
+    [timestamp] => 1611681789
+    [type] => TEST_EVENT
+)
+
+[2023-12-03_13-46-34] Array
+(
+    [content] => Array
+        (
+            [item_id] => 1234567890
+            [status] => 0
+            [user_uuid] => 9a95b38f-f98b-417a-988b-9d0d584893e7
+        )
+
+    [timestamp] => 1611681789
+    [type] => TEST_EVENT
+)
+
+Hash : E543F7E8FE75FB6A90354E42FF98E0607A0BA3686EE29C82950D0B9C910DBFEB
+[2023-12-03_14-51-51] Array
+(
+    [content] => Array
+        (
+            [item_id] => 1234567890
+            [status] => 0
+            [user_uuid] => 9a95b38f-f98b-417a-988b-9d0d584893e7
+        )
+
+    [timestamp] => 1611681789
+    [type] => TEST_EVENT
+)
+
+Hash : E543F7E8FE75FB6A90354E42FF98E0607A0BA3686EE29C82950D0B9C910DBFEB
+[2023-12-03_14-54-10] Array
+(
+    [content] => Array
+        (
+            [item_id] => 1234567890
+            [status] => 0
+            [user_uuid] => 9a95b38f-f98b-417a-988b-9d0d584893e7
+        )
+
+    [timestamp] => 1611681789
+    [type] => TEST_EVENT
+)
+
+Hash : E543F7E8FE75FB6A90354E42FF98E0607A0BA3686EE29C82950D0B9C910DBFEB

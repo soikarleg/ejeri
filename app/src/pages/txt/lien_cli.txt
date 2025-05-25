@@ -1,0 +1,13 @@
+Bonjour {$client},
+
+Voici le lien qui vous permet d'accéder à votre espace client.
+Vous pourrez consulter vos factures, vos règlements et vos attestations fiscales.
+Votre numéro client est le : {$numero}
+Il vous sera demandé pour créer votre compte en suivant "Première connexion".
+
+Le lien : <a href="https://cli.sagaas.fr">https://cli.sagaas.fr</a>
+
+Cordialement,
+
+{$signataire}
+{$gestion}

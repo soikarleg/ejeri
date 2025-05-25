@@ -1,0 +1,16 @@
+RewriteEngine On
+
+# Redirection des requêtes vers index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^api/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/?$ index.php?module=$1&action=$2 [L,QSA]
+#RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+# Optionnel : Gérer les requêtes à la racine de l'API sans 'api/' (si nécessaire)
+RewriteRule ^([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/?$ index.php?groupe=$1&action=$2 [L,QSA]
+
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "https://api.ottovongruff"
+    Header set Access-Control-Allow-Methods "HEAD, GET, POST, PUT, DELETE, OPTIONS"
+    # Header set Access-Control-Allow-Headers "Content-Type, Authorization"
+</IfModule>

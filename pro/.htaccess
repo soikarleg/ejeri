@@ -1,0 +1,21 @@
+RewriteEngine On
+RewriteBase /
+
+# Redirection HTTP et www vers HTTPS sans www
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.
+RewriteRule ^(.*)$ https://enooki.com/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+ErrorDocument 400 /public/error404.php
+ErrorDocument 401 /public/error401.php
+ErrorDocument 403 /public/error404.php
+ErrorDocument 404 /public/error404.php
+ErrorDocument 500 /public/error404.php
+
+<FilesMatch "\.(env|json|lock|md|txt|csv|yml|yaml|ini|log|bak|sql)$">
+  Require all denied
+</FilesMatch>

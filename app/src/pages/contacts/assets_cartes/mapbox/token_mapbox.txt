@@ -1,0 +1,3 @@
+pk.eyJ1Ijoib3R0b3ZvbiIsImEiOiJjbHQ0NmdrNDExZWQzMmtyejJ5Nng1cHM0In0.wZBjeEjUzeSRgu5Oc1xl8w  //mag
+
+pk.eyJ1Ijoib3R0b3ZvbiIsImEiOiJjbHQ0NmJsM20xb290MmpvNWI3djZhcHN0In0.z-Jcud1SqKW1gFqMNrLEWw  //default public

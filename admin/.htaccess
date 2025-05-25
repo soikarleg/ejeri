@@ -1,0 +1,20 @@
+# .htaccess pour admin
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+ErrorDocument 400 /public/error404.php
+ErrorDocument 401 /public/error401.php
+ErrorDocument 403 /public/error404.php
+ErrorDocument 404 /public/error404.php
+ErrorDocument 500 /public/error404.php
+
+<FilesMatch "\.(env|json|lock|md|txt|csv|yml|yaml|ini|log|bak|sql)$">
+  Require all denied
+</FilesMatch>
+<Directory "config">
+  Require all denied
+</Directory>

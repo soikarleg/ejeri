@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="565.01447"
+   height="215.15117"
+   viewBox="0 0 565.01446 215.15118"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="enooki_noir_titre_couleur_jardins.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview4900"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="false"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="false"
+     inkscape:deskcolor="#c4c4c4"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="281.78204"
+     inkscape:cy="98.641393"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showguides="true" />
+  <defs
+     id="defs4895">
+    <rect
+       x="30.955427"
+       y="35.127296"
+       width="1135.7578"
+       height="232.71832"
+       id="rect9022" />
+  </defs>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-306.38477,-54.613708)">
+    <path
+       style="opacity:1;fill:#000000;stroke-width:2.04585;paint-order:stroke fill markers"
+       id="path12385"
+       sodipodi:type="arc"
+       sodipodi:cx="685.22852"
+       sodipodi:cy="144.96187"
+       sodipodi:rx="34.593777"
+       sodipodi:ry="37.557285"
+       sodipodi:start="0"
+       sodipodi:end="6.2815713"
+       sodipodi:arc-type="slice"
+       d="m 719.82229,144.96187 a 34.593777,37.557285 0 0 1 -34.57982,37.55728 34.593777,37.557285 0 0 1 -34.60772,-37.52697 34.593777,37.557285 0 0 1 34.55189,-37.58757 34.593777,37.557285 0 0 1 34.63561,37.49664 l -34.59373,0.0606 z"
+       inkscape:label="bouche" />
+    <path
+       style="display:none;fill:#009400;stroke-width:2.04585;paint-order:stroke fill markers"
+       id="path12385-3"
+       sodipodi:type="arc"
+       sodipodi:cx="569.82629"
+       sodipodi:cy="147.16035"
+       sodipodi:rx="34.593777"
+       sodipodi:ry="37.557285"
+       sodipodi:start="0"
+       sodipodi:end="6.2815713"
+       sodipodi:arc-type="slice"
+       d="m 604.42007,147.16035 a 34.593777,37.557285 0 0 1 -34.57982,37.55729 34.593777,37.557285 0 0 1 -34.60772,-37.52698 34.593777,37.557285 0 0 1 34.55189,-37.58756 34.593777,37.557285 0 0 1 34.63561,37.49664 l -34.59374,0.0606 z"
+       inkscape:label="bouche" />
+    <text
+       xml:space="preserve"
+       id="text9020"
+       style="font-weight:bold;font-size:146.667px;font-family:Fredoka;-inkscape-font-specification:'Fredoka Bold';white-space:pre;shape-inside:url(#rect9022);display:inline;opacity:1;fill:#008000;stroke-width:1.13386;paint-order:stroke fill markers;image-rendering:optimizeQuality"
+       transform="matrix(1.3147994,0,0,1.3147994,262.79249,-30.130759)"
+       inkscape:label="enooki"><tspan
+         x="30.955078"
+         y="171.52121"
+         id="tspan3072"><tspan
+           style="fill:#000000"
+           id="tspan3070">enooki</tspan></tspan></text>
+    <path
+       d="m 697.15532,165.04542 c -9.94043,11.5625 -16.6827,14.51198 -40.33354,13.64045 4.52508,-14.27619 13.57567,-25.07044 30.72438,-38.88958 -17.03918,10.01077 -27.09913,17.44641 -37.24863,33.4515 -8.16227,-21.59018 -2.41618,-32.85555 6.85418,-42.78948 9.89944,-10.60948 28.10938,-11.65833 46.5381,-10.21907 5.19669,19.06851 2.06569,33.07944 -6.53449,44.80618 z"
+       id="path12341"
+       style="fill:#009400;stroke-width:0.0605501"
+       inkscape:label="feuille"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="display:none;fill:#000000;stroke-width:1.56312;paint-order:stroke fill markers"
+       id="path12385-2"
+       sodipodi:type="arc"
+       sodipodi:cx="562.82135"
+       sodipodi:cy="166.83363"
+       sodipodi:rx="26.431152"
+       sodipodi:ry="28.695404"
+       sodipodi:start="0"
+       sodipodi:end="6.2815713"
+       sodipodi:arc-type="slice"
+       d="m 589.2525,166.83363 a 26.431152,28.695404 0 0 1 -26.42048,28.69541 26.431152,28.695404 0 0 1 -26.44181,-28.67225 26.431152,28.695404 0 0 1 26.39915,-28.71854 26.431152,28.695404 0 0 1 26.46311,28.64907 l -26.43112,0.0463 z"
+       inkscape:label="bouche" />
+    <path
+       d="m 582.27258,184.69748 c -11.96245,9.85761 -19.22752,11.64256 -42.76656,6.66741 7.00879,-13.51507 17.94666,-22.75749 37.52081,-33.62523 -18.80387,7.07203 -30.17025,12.77517 -43.11269,27.0465 -4.43109,-23.04184 3.27851,-33.32932 14.28731,-41.67186 11.75609,-8.9101 30.17826,-6.80222 48.38801,-2.16415 1.89796,20.00159 -3.66842,33.49276 -14.31688,43.74733 z"
+       id="path12341-9"
+       style="display:none;fill:#008400;stroke-width:0.0615534"
+       inkscape:label="feuille"
+       sodipodi:nodetypes="ccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:64px;font-family:Fredoka;-inkscape-font-specification:'Fredoka Bold';fill:#000000;stroke-width:1.13386;paint-order:stroke fill markers"
+       x="678.65924"
+       y="255.74887"
+       id="text3038"><tspan
+         sodipodi:role="line"
+         id="tspan3036"
+         x="678.65924"
+         y="255.74887"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Fredoka;-inkscape-font-specification:'Fredoka Medium'">jardins</tspan></text>
+  </g>
+</svg>

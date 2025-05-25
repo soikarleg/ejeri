@@ -1,0 +1,56 @@
+
+[08-Mar-2025 22:58:21 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[08-Mar-2025 22:58:21 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[09-Mar-2025 09:18:26 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[09-Mar-2025 09:18:26 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[09-Mar-2025 09:18:26 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[09-Mar-2025 09:18:26 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[09-Mar-2025 09:18:26 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'clef' in 'field list'
+[09-Mar-2025 13:04:10 Europe/Paris] Erreur lors de allRow() : SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':idcompte AND idcli > :idcli' at line 1
+[09-Mar-2025 13:04:39 Europe/Paris] Erreur lors de allRow() : SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':idcompte AND idcli > :idcli' at line 1
+[09-Mar-2025 21:56:36 Europe/Paris] Erreur lors de allRow() : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.idcli' in 'where clause'
+[10-Mar-2025 20:35:04 Europe/Paris] PHP Fatal error:  Cannot redeclare customErrorHandler() (previously declared in /homepages/26/d529006740/htdocs/0c8f54a6a56/app/inc/error.php:11) in /homepages/26/d529006740/htdocs/0c8f54a6a56/app/inc/error.php on line 11
+[10-Mar-2025 20:37:04 Europe/Paris] PHP Fatal error:  Cannot redeclare checkSession() (previously declared in /homepages/26/d529006740/htdocs/0c8f54a6a56/app/inc/function.php:50) in /homepages/26/d529006740/htdocs/0c8f54a6a56/app/inc/function.php on line 50
+[10-Mar-2025 20:41:46 Europe/Paris] Erreur lors de allRow() : SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':idcompte AND idcli = :idcli LIMIT 1' at line 1
+[12-Mar-2025 00:13:07 Europe/Paris] PHP Fatal error:  Cannot redeclare checkSession() (previously declared in /homepages/26/d529006740/htdocs/0c8f54a6a56/app/inc/function.php:50) in /homepages/26/d529006740/htdocs/0c8f54a6a56/app/inc/function.php on line 50
+[12-Mar-2025 00:16:52 Europe/Paris] Erreur lors de allRow() : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbs13526931.users' doesn't exist
+[12-Mar-2025 00:18:05 Europe/Paris] Erreur lors de allRow() : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbs13526931.users' doesn't exist
+[12-Mar-2025 00:26:06 Europe/Paris] Erreur lors de allRow() : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbs13526931.users' doesn't exist
+[12-Mar-2025 00:27:09 Europe/Paris] Erreur lors de allRow() : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbs13526931.users' doesn't exist
+[12-Mar-2025 00:28:50 Europe/Paris] Erreur lors de allRow() : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbs13526931.users' doesn't exist
+[12-Mar-2025 00:29:35 Europe/Paris] Erreur lors de allRow() : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'actif' in 'where clause'
+[12-Mar-2025 00:31:32 Europe/Paris] Erreur lors de allRow() : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'actif' in 'where clause'
+[12-Mar-2025 00:33:14 Europe/Paris] Erreur lors de allRow() : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nom' in 'order clause'
+[12-Mar-2025 00:34:16 Europe/Paris] Erreur lors de allRow() : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbs13526931.users' doesn't exist
+[12-Mar-2025 00:38:05 Europe/Paris] Erreur lors de allRow() : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbs13526931.users' doesn't exist
+[12-Mar-2025 00:39:13 Europe/Paris] Erreur lors de allRow() : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbs13526931.users' doesn't exist
+[12-Mar-2025 00:40:17 Europe/Paris] Erreur lors de allRow() : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbs13526931.users' doesn't exist
+[12-Mar-2025 00:41:05 Europe/Paris] Erreur lors de allRow() : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbs13526931.users' doesn't exist
+[12-Mar-2025 00:42:19 Europe/Paris] Erreur lors de allRow() : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbs13526931.users' doesn't exist
+[12-Mar-2025 21:55:14 Europe/Paris] PHP Fatal error:  Cannot redeclare checkSession() (previously declared in /homepages/26/d529006740/htdocs/0c8f54a6a56/app/inc/function.php:50) in /homepages/26/d529006740/htdocs/0c8f54a6a56/app/inc/function.php on line 50
+[12-Mar-2025 21:59:05 Europe/Paris] Erreur lors de allRow() : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbs13526931.client_adresse' doesn't exist
+[12-Mar-2025 23:01:13 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[12-Mar-2025 23:01:13 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[12-Mar-2025 23:01:13 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[12-Mar-2025 23:01:13 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[12-Mar-2025 23:01:13 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[12-Mar-2025 23:26:21 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[12-Mar-2025 23:26:21 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[12-Mar-2025 23:26:21 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[12-Mar-2025 23:26:21 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[12-Mar-2025 23:26:21 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id_i' in 'field list'
+[12-Mar-2025 23:29:30 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[12-Mar-2025 23:29:30 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[12-Mar-2025 23:29:30 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[12-Mar-2025 23:29:30 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[12-Mar-2025 23:29:30 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[12-Mar-2025 23:29:30 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[14-Mar-2025 19:23:16 Europe/Paris] PHP Fatal error:  Cannot redeclare customErrorHandler() (previously declared in /homepages/26/d529006740/htdocs/0c8f54a6a56/app/inc/error.php:11) in /homepages/26/d529006740/htdocs/0c8f54a6a56/app/inc/error.php on line 11
+[15-Mar-2025 20:36:29 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[15-Mar-2025 20:36:29 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[15-Mar-2025 20:36:29 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[15-Mar-2025 20:36:29 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[15-Mar-2025 20:36:29 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[15-Mar-2025 20:36:29 Europe/Paris] Erreur lors de handleRow() : SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'idcolla' cannot be null
+[23-Mar-2025 18:53:41 Europe/Paris] Erreur lors de allRow() : SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'on c.idcli = cc.idcli join client_correspondance cc join client_chantier cw wher' at line 1
+[23-Mar-2025 18:55:23 Europe/Paris] Erreur lors de allRow() : SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'on c.idcli = cc.idcli join client_correspondance cc join client_chantier cw wher' at line 1

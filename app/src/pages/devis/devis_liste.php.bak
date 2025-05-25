@@ -1,0 +1,199 @@
+<?php
+session_start();
+$secteur = $_SESSION['idcompte'];
+// error_reporting(\E_ALL);
+// ini_set('display_errors', 'stdout');
+$chemin = $_SERVER['DOCUMENT_ROOT'];
+include $chemin . '/inc/function.php';
+$data = $_POST;
+$conn = new connBase();
+$ins = new FormValidation($data);
+$devis = new Devis($secteur);
+foreach ($_POST as $key => $value) {
+  ${$key} = $ins->valFull($value);
+  // '$' . $key . ' = ' . $value . '<br>';
+}
+
+$critere = " and annee = '2024' ";
+
+
+?>
+<p class="titre_menu_item mb-2">Recherche d'un devis</p>
+<ul class="nav justify-content-end">
+  <li class="nav-item mt-1 mr-1 mb-2">
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Recherche devis">
+  </li>
+  <li class="nav-item dropdown">
+    <a class="btn btn-mag-n mr-1" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Année</a>
+    <ul class="dropdown-menu">
+
+      <?php
+      $devis = $conn->askAllDevis($secteur, ' group by annee ', 'annee');
+
+      foreach ($devis as $d) {
+
+      ?>
+        <li>
+          <p class="dropdown-item pointer" onclick="ajaxData('annee=<?= $d['annee'] ?>', '../src/pages/devis/devis_liste.php', 'action', 'attente_target');"><?= $d['annee'] ?></p>
+        </li>
+      <?php
+      }
+      ?>
+
+
+
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li>
+        <p class="dropdown-item pointer" onclick="ajaxData('annee=', '../src/pages/devis/devis_liste.php', 'action', 'attente_target');">Toutes</p>
+      </li>
+    </ul>
+  </li>
+
+  <li class="nav-item">
+    <a class="btn btn-mag-n mr-1" aria-current="page" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="btn btn-mag-n mr-1" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="btn btn-mag-n mr-1" href="#">Link</a>
+  </li>
+
+</ul>
+<div class="scroll">
+  <table class="table">
+    <tr>
+      <td>-</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <?php
+    $devis_liste = $conn->askAllDevis($secteur, $critere);
+    //var_dump($devis_liste);
+    foreach ($devis_liste as $d) {
+      $statut = $d['validite'];
+      $attente = "text-muted";
+      $valide = "text-muted";
+      $refuse = "text-muted";
+      if ($statut === "En attente") {
+        $attente = "text-primary";
+      };
+      if ($statut === "Validé") {
+        $valide = "text-success";
+      };
+      if ($statut === "Refusé") {
+        $refuse = "text-danger";
+      }
+
+      $chemin_doc = 'https://app.enooki.com/documents/pdf/devis/' . $secteur . '/Devis_' . $d['numero'] . '.pdf';
+      $chemin_bt = 'https://app.enooki.com/src/pages/devis/devis_bt_pdf.php?numero=' . $d['numero'];
+
+      $devis = new Devis($secteur);
+      $details_travaux = $devis->askDevisLignes($d['numero']);
+      $dettvx .= '<b>Description devis</b></br></br>';
+      foreach ($details_travaux as $dt) {
+
+
+        $dettvx .= $dt['designation'] . '<br><br>' . Dec_2($dt['q']) . ' x ' . Dec_2($dt['puttc']) . ' = ' . Dec_2($dt['ptttc']);
+        $dettvx .= '<br>';
+        $dettvx .= '<br>';
+      }
+
+    ?>
+      <tr>
+        <td><i class='bx st bxs-hard-hat text-muted mr-1 bx-sm icon-bar pointer' title="Bon de travaux" onclick="getDocPDF('<?= $chemin_bt ?>','_blank')"></i>
+          <i class='bx st bxs-printer text-danger mr1 bx-sm icon-bar pointer' title="Imprimer" onclick="getDocPDF('<?= $chemin_doc ?>','_blank')"></i>
+
+          <i title="Modifier et/ou envoyer par mail le devis N° <?= $d['numero'] ?>" class='bx st bx-mail-send bx-sm text-primary icon-bar pointer bx-tada-hover' onclick=" ajaxData('numero_devis=<?= $d['numero'] ?>&idcli=<?= $d['id'] ?>', '../src/pages/devis/devis_faire.php' , 'action' , 'attente_target' );"></i>
+        </td>
+        <td><span class="text-bold"><?= $d['numero'] ?></span> du <?= $d['jour'] . '/' . $d['mois'] . '/' . $d['annee'] ?><span class="ml-2 text-muted small">Màj : <?= Affdate($d['time_maj']) ?></span></td>
+        <td><span class="mr-2 puce-mag"><?= $d['id'] ?></span><?= NomClient($d['id']) ?></td>
+        <td><i data-dettvx="<?= $dettvx ?>" id="dt<?= $d['numero'] ?>" class='bx bx-list-ul mr-2 icon-bar pointer text-warning'></i><span><?= Tronque($d['titre'], 22) ?></span></td>
+        <td class="text-right"><?= Dec_2($d['totttc'], '€') ?></td>
+        <td class="text-right">
+          <span><i onclick="modifierStatut('<?= $d['numero'] ?>','En attente');" title="En attente" class='<?= $attente ?> bx st bx-sm bxs-time-five'></i></span>
+          <span><i onclick="modifierStatut('<?= $d['numero'] ?>','Validé');" title="Validé" class='<?= $valide ?> bx st bx-sm bxs-check-circle'></i></span>
+          <span><i onclick="modifierStatut('<?= $d['numero'] ?>','Refusé');" title="Refusé" class='<?= $refuse ?> bx st bx-sm bxs-x-circle'></i></span>
+        </td>
+      </tr>
+      <script>
+        $(document).ready(function() {
+          $('#dt<?= $d['numero'] ?>').hover(function() {
+
+            var dettvx = $(this).attr('data-dettvx');
+            var tooltip = '<p class="custom-tooltip">' + dettvx + '</p>';
+            console.log(dettvx);
+            $(this).append(tooltip);
+            $('.custom-tooltip').css({
+              'top': 0,
+              'left': -550
+
+              // 'top': $(this).position().top + $(this).outerHeight(),
+              // 'left': $(this).position().left
+            }).show();
+          }, function() {
+            $('.custom-tooltip').remove();
+          });
+        });
+      </script>
+    <?php
+      $dettvx = "";
+    }
+    ?>
+  </table>
+</div>
+<script>
+  function modifierStatut(numero, statut) {
+    $.ajax({
+      type: "POST", // Méthode HTTP
+      url: "../src/pages/devis/devis_modifier_statut.php", // URL du script PHP pour la suppression
+      data: {
+        numero: numero,
+        statut: statut
+      }, // Données à envoyer au script PHP
+      success: function(response) {
+        //alert(response);
+        if (response === 'success') {
+          // pushSuccess('Confirmation', 'Le statut de ' + numero + ' a bien été modifié.');
+          ajaxData('cs=cs', '../src/pages/devis/devis_liste.php', 'action', 'attente_target');
+        } else {
+          pushWarning('Erreur', 'La suppression ' + numero + ' a échoué !');
+        }
+      },
+      error: function() {
+        // Cette fonction sera exécutée en cas d'erreur de la requête AJAX
+        pushWarning('Erreur', 'Erreur dans l\'AJAX.');
+      }
+    });
+  }
+
+
+  $(function() {
+    $('.st').tooltip({
+      content: function() {
+        return $(this).attr('title').replace(/\\n/g, '<br>');
+      }
+    });
+  });
+
+  $(document).ready(function() {
+    $('#dt').hover(function() {
+
+      var dettvx = $(this).attr('data-dettvx');
+      var tooltip = '<div class="custom-tooltip">' + dettvx + '</div>';
+      console.log(dettvx);
+      $(this).append(tooltip);
+      $('.custom-tooltip').css({
+        'top': $(this).position().top + $(this).outerHeight(),
+        'left': $(this).position().left
+      }).show();
+    }, function() {
+      $('.custom-tooltip').remove();
+    });
+  });
+</script>

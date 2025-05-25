@@ -1,0 +1,62 @@
+[
+    {
+        "code": "6530",
+        "libelle": "Société à responsabilité limitée",
+        "abrege": "SARL"
+    },
+    {
+        "code": "6570",
+        "libelle": "Société par actions simplifiée",
+        "abrege": "SAS"
+    },
+    {
+        "code": "6540",
+        "libelle": "Société civile immobilière",
+        "abrege": "SCI"
+    },
+    {
+        "code": "6710",
+        "libelle": "Entreprise individuelle",
+        "abrege": "EI"
+    },
+    {
+        "code": "5710",
+        "libelle": "Société par actions simplifiée",
+        "abrege": "SAS"
+    },
+    {
+        "code": "7210",
+        "libelle": "Association déclarée",
+        "abrege": "Association"
+    },
+    {
+        "code": "8410",
+        "libelle": "Syndicat de salariés",
+        "abrege": "Syndicat"
+    },
+    {
+        "code": "9300",
+        "libelle": "Fondation",
+        "abrege": "Fondation"
+    },
+    {
+        "code": "9220",
+        "libelle": "Association déclarée",
+        "abrege": "Association"
+    },
+    {
+        "code": "1000",
+        "libelle": "Entreprise Individuelle",
+        "abrege": "EI"
+    },
+    {
+        "code": "5499",
+        "libelle": "Société à responsabilité limitée unipersonnelle",
+        "abrege": "EURL"
+    },
+    {
+        "code": "0000",
+        "libelle": "Organisme de placement",
+        "abrege": "Organisme"
+    }
+]

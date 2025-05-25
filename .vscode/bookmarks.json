@@ -1,0 +1,154 @@
+{
+	"files": [
+		{
+			"path": "app/src/pages/reglements/reglements_liste_affiche.php",
+			"bookmarks": [
+				{
+					"line": 49,
+					"column": 0,
+					"label": "Revoir la recherche des règlements /class ou /direct"
+				}
+			]
+		},
+		{
+			"path": "app/myclass/flxxx/src/Reglements.php",
+			"bookmarks": [
+				{
+					"line": 13,
+					"column": 0,
+					"label": "Remise bordereau dans class Règlements"
+				}
+			]
+		},
+		{
+			"path": "app/src/webhooks/item_created.php",
+			"bookmarks": [
+				{
+					"line": 5,
+					"column": 0,
+					"label": "Item created"
+				}
+			]
+		},
+		{
+			"path": "app/src/webhooks/item_account_update.php",
+			"bookmarks": [
+				{
+					"line": 5,
+					"column": 0,
+					"label": "Item update"
+				}
+			]
+		},
+		{
+			"path": "app/index.php",
+			"bookmarks": [
+				{
+					"line": 86,
+					"column": 0,
+					"label": "Index - Déconnexion"
+				},
+				{
+					"line": 98,
+					"column": 0,
+					"label": "Index - Login"
+				},
+				{
+					"line": 143,
+					"column": 0,
+					"label": "Index - Inscription"
+				},
+				{
+					"line": 198,
+					"column": 0,
+					"label": "Index - Réinitialisation mot de passe"
+				},
+				{
+					"line": 247,
+					"column": 0,
+					"label": "Index - Header inc"
+				},
+				{
+					"line": 250,
+					"column": 0,
+					"label": "Index - Acceptation cookies"
+				},
+				{
+					"line": 271,
+					"column": 0,
+					"label": "Index - Navigation connecté"
+				}
+			]
+		},
+		{
+			"path": "app/assets/css/style.css",
+			"bookmarks": [
+				{
+					"line": 1640,
+					"column": 0,
+					"label": "Checkbox"
+				}
+			]
+		},
+		{
+			"path": "app/src/ajax/menu_factures.php",
+			"bookmarks": [
+				{
+					"line": 18,
+					"column": 0,
+					"label": "Facturation récurrentes"
+				}
+			]
+		},
+		{
+			"path": "client/index.php",
+			"bookmarks": [
+				{
+					"line": 42,
+					"column": 0,
+					"label": "Validation du compte client"
+				},
+				{
+					"line": 55,
+					"column": 0,
+					"label": "Validation compte client"
+				},
+				{
+					"line": 62,
+					"column": 0,
+					"label": "Filtrage entrée espace client"
+				}
+			]
+		},
+		{
+			"path": "client/ajax/oubli.php",
+			"bookmarks": [
+				{
+					"line": 11,
+					"column": 0,
+					"label": "Mot de passe oublié"
+				}
+			]
+		},
+		{
+			"path": "app/assets/js/script.js",
+			"bookmarks": [
+				{
+					"line": 799,
+					"column": 0,
+					"label": "getDocPDF appel ajax xhr pour pdf"
+				}
+			]
+		},
+		{
+			"path": "app/src/pages/reglements/reglements_inscription_bd.php",
+			"bookmarks": [
+				{
+					"line": 135,
+					"column": 0,
+					"label": "Appel 'montotal' pour rafraichissement"
+				}
+			]
+		}
+	]
+}

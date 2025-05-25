@@ -1,0 +1,48 @@
+<?php
+//$chemin = __DIR__;
+$chemin = $_SERVER['DOCUMENT_ROOT'];
+//require  '../app/vendor/autoload.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+
+class SendMail
+{
+  private $mail;
+
+  public function __construct($verbose = false)
+  {
+    $this->mail = new PHPMailer(true);
+
+    if ($verbose) {
+      $this->mail->SMTPDebug = SMTP::DEBUG_SERVER;
+    }
+
+    $this->mail->isSMTP();
+    $this->mail->Host       = 'smtp.ionos.fr';
+    $this->mail->SMTPAuth   = true;
+    $this->mail->Username   = 'noreply@sagaas.fr';
+    $this->mail->Password   = 'FranLeg68FLGA-:!010268-:!';
+    $this->mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $this->mail->Port       = 587;
+  }
+
+  public function adressPJ($secteur, $destinataire, $pj = false)
+  {
+    $conn = new ConnBase();
+    $s = $conn->askIdCompte($secteur);
+    $nom_secteur = NomSecteur($secteur);
+    $secteur_min = strtolower($nom_secteur);
+    $secteur_min = str_replace(' ', '', $secteur_min);
+    $this->mail->setFrom($secteur_min . '@sagaas.fr', '[' . $nom_secteur . ']');
+    $this->mail->addReplyTo($s['email'], '[' . $nom_secteur . ']');
+    $this->mail->addBCC($s['email'], '[' . $nom_secteur . ']');
+    $this->mail->addAddress($destinataire);
+    $this->mail->addBCC('info@sagaas.fr', '[enooki - Action]');
+    if ($pj != false) {
+      $this->mail->addAttachment($pj);
+    }
+  }
+}
