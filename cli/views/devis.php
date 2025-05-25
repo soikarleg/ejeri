@@ -59,7 +59,7 @@ include __DIR__ . '/partials/header.php'; ?>
                             <?php endforeach; ?>
                         </tbody>
                     </table>
-                    <a href="/devis_nouveau" class="btn btn-primary">Demandez un nouveau devis</a>
+                    <a href="/devis_nouveau" class="small">Demandez un nouveau devis</a>
                 </div>
 
             </div>
