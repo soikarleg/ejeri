@@ -8,9 +8,11 @@
         ?>
         <?php if (!empty($prenom) && !empty($nom)) : ?>
             <strong><?= htmlspecialchars($prenom) . ' ' . htmlspecialchars($nom) ?></strong><br>
+                <a href="/modifier_contact?action=mod_nom" class="">Modifier</a>
+            
         <?php else : ?>
             <p>Aucun nom et prénom<br>
-                <a href="/modifier_contact" class="">Ajouter votre nom</a>
+                <a href="/modifier_contact?action=ajout_nom" class="">Ajouter votre nom</a>
             </p>
         <?php endif; ?>
 
