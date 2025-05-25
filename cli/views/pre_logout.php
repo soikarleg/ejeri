@@ -10,7 +10,7 @@ include __DIR__ . '/partials/header.php'; ?>
         <div class="col-md-9">
             <div class="">
                 <div class="">
-                    <h2 class="mb-4">Confirmation</h2>
+                    <!-- <h2 class="mb-4">Confirmation</h2> -->
                     <p class="">Confirmez-vous la déconnexion ?</p>
                     
                     <a href="/dashboard" class="btn btn-danger">Non, retourner au tableau de bord</a>
