@@ -104,9 +104,9 @@ switch ($action) {
         break;
     // AdressesController
 
-    // case 'modifie_adresse':
-    //     $adresses->modifieAdresse();
-    //     break;
+    case 'modifie_adresse':
+        $adresses->edit();
+        break;
     // case 'ajoute_adresse':
     //     $adresses->ajouteAdresse();
     //     break;

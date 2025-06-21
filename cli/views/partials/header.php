@@ -53,6 +53,7 @@ Auth::startSession();
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
+            
         </div>
     </header>
-    <main class="section dark-background">
+    <main class="section dark-background"><p><?=prettyc($_GET)?></p>

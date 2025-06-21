@@ -14,6 +14,7 @@ class AdressesController
         $this->client_id = $_SESSION['client_id'] ?? null;
     }
 
+    
     private function getSidemenuData($client_id)
     {
         require_once __DIR__ . '/../models/Database.php';

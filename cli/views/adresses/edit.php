@@ -21,4 +21,5 @@ require PROJECT_ROOT . '/cli/views/partials/header.php'; ?>
         <a href="/dashboard" class="btn btn-secondary">Annuler</a>
     </form>
 </div>
+
 <?php require PROJECT_ROOT . '/cli/views/partials/footer.php'; ?>
