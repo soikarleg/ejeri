@@ -125,6 +125,11 @@ h6 {
   border-radius: var(--border-radius);
 }
 
+/* LARGEUR */
+.l-9{
+  width:90px
+}
+
 .text-justify {
   text-align: justify;
 }
@@ -1930,7 +1935,11 @@ section,
 .contact .php-email-form input[type="text"],
 .contact .php-email-form input[type="email"],
 .contact .php-email-form input[type="password"],
-.contact .php-email-form textarea {
+.contact .php-email-form textarea,
+input[type="text"],
+input[type="email"],
+
+.form-control {
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
@@ -1942,14 +1951,27 @@ section,
     transparent 50%
   ); */
   background-color: var(--surface-color);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  border:transparent !important;
+  border: 1px solid transparent; 
+  /*border-color: color-mix(in srgb, var(--default-color), transparent 80%);*/
+}
+.input-group-text{
+  background-color:#313342;
+  border: transparent !important;
+  color: var(--default-color);
 }
 
 .contact .php-email-form input[type="text"]:focus,
 .contact .php-email-form input[type="email"]:focus,
 .contact .php-email-form input[type="password"]:focus,
-.contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
+.contact .php-email-form textarea:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+
+.form-control:focus {
+  border-color: var(--accent-color) !important;
+   background-color: var(--surface-color) !important; 
+   color: var(--default-color) !important;
 }
 
 .contact .php-email-form input[type="text"]::placeholder,
@@ -1959,11 +1981,12 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.contact .php-email-form button[type="submit"] {
+.contact .php-email-form button[type="submit"],
+button[type="submit"] {
   color: var(--contrast-color);
   background: var(--accent-color);
   border: 0;
-  padding: 10px 30px;
+  padding: 7px 15px;
   transition: 0.4s;
   border-radius: var(--border-radius);
 }

@@ -14,6 +14,24 @@ class AdressesController
         $this->client_id = $_SESSION['client_id'] ?? null;
     }
 
+    private function getSidemenuData($client_id)
+    {
+        require_once __DIR__ . '/../models/Database.php';
+        require_once __DIR__ . '/../models/AdresseModel.php';
+        require_once __DIR__ . '/../models/ClientModel.php';
+        $pdo = Database::getConnection();
+        $adresseModel = new AdresseModel($pdo, $client_id);
+        $clientModel = new ClientModel($pdo, $client_id);
+        $adresses = $adresseModel->getAllByClient($client_id);
+        $client = $clientModel->getNomById($client_id);
+        //pretty($client);
+        return [
+            'adresses' => $adresses,
+            'client' => $client
+        ];
+    }
+
+
     // Affiche la liste des adresses du client
     public function index()
     {
@@ -43,6 +61,8 @@ class AdressesController
         }
     }
 
+
+ 
     // Affiche le formulaire d'édition
     public function edit()
     {

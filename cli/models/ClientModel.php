@@ -32,6 +32,7 @@ class ClientModel
         $stmt->execute(['email' => $email]);
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
+
     public function clientExistsByEmail($email)
     {
         $sql = "SELECT COUNT(*) FROM clients WHERE email = :email LIMIT 1";
@@ -39,6 +40,21 @@ class ClientModel
         $stmt->execute(['email' => $email]);
         return $stmt->fetchColumn() > 0;
     }
+
+public function updateNomById($id, $nom, $prenom, $civilite = null)
+{
+    $sql = "UPDATE clients SET nom = :nom, prenom = :prenom" . ($civilite !== null ? ", civilite = :civilite" : "") . " WHERE idcli = :id";
+    $stmt = $this->pdo->prepare($sql);
+    $params = [
+        'nom' => $nom,
+        'prenom' => $prenom,
+        'id' => $id
+    ];
+    if ($civilite !== null) {
+        $params['civilite'] = $civilite;
+    }
+    return $stmt->execute($params);
+}
    
    
 }

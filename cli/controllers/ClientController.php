@@ -52,7 +52,7 @@ class ClientController
     }
     public function preLogout()
     {
-                require_once __DIR__ . '/../classes/Auth.php';
+        require_once __DIR__ . '/../classes/Auth.php';
         Auth::requireAuth();
         $client_id = $_SESSION['client_id'];
         $sidemenu = $this->getSidemenuData($client_id);
@@ -430,6 +430,46 @@ class ClientController
             http_response_code(500);
             echo 'Erreur serveur.';
             exit;
+        }
+    }
+
+    // Affiche le formulaire d'édition
+    public function modifieNom()
+    {
+        require_once __DIR__ . '/../classes/Auth.php';
+        Auth::requireAuth();
+        $client_id = $_SESSION['client_id'];
+        $sidemenu = $this->getSidemenuData($client_id);
+        $nom = $sidemenu['client']['nom'] ?? '';
+        $prenom = $sidemenu['client']['prenom'] ?? '';
+        $adresses = $sidemenu['adresses'];
+        $telephones = $sidemenu['telephones'];
+        $id = $_GET['id'] ?? null;
+        if ($id) {
+            require_once __DIR__ . '/../models/Database.php';
+            $pdo = Database::getConnection();
+            $nomModel = new ClientModel($pdo, $id);
+            $client = $nomModel->getNomById($id);
+            require PROJECT_ROOT . '/cli/views/nom/edit_nom.php';
+        }
+    }
+     public function updateNom()
+    {
+        require_once __DIR__ . '/../classes/Auth.php';
+        Auth::requireAuth();
+        $client_id = $_SESSION['client_id'];
+        $sidemenu = $this->getSidemenuData($client_id);
+        $nom = $sidemenu['client']['nom'] ?? '';
+        $prenom = $sidemenu['client']['prenom'] ?? '';
+        $adresses = $sidemenu['adresses'];
+        $telephones = $sidemenu['telephones'];
+        $id = $_GET['id'] ?? null;
+        if ($id) {
+            require_once __DIR__ . '/../models/Database.php';
+            $pdo = Database::getConnection();
+            $nomModel = new ClientModel($pdo, $id);
+            $update = $nomModel->updateNomById($id, $nom, $prenom);
+            require PROJECT_ROOT . '/cli/views/nom/edit_nom.php';
         }
     }
 }

@@ -17,7 +17,7 @@ class AdresseModel
         $stmt->execute(['client_id' => $client_id]);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
-    
+
     public function getAdresseById($id)
     {
         $sql = "SELECT * FROM adresses WHERE id = :id AND user_idcli = :client_id";
@@ -25,13 +25,14 @@ class AdresseModel
         $stmt->execute(['id' => $id, 'client_id' => $this->client_id]);
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
-public function ajoutAdresse(string $ligne1, string $cp, string $ville, string $type = 'livraison')
+    public function ajoutAdresse(string $ligne1, string $cp, string $ville, string $type = 'livraison')
     {
         $sql = "INSERT INTO adresses (ligne1, cp, ville, user_idcli, type) VALUES (?, ?, ?, ?, ?)";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute([$ligne1, $cp, $ville, $this->client_id, $type]);
         return $this->pdo->lastInsertId();
     }
+    
     public function updateAdresse($id, $ligne1, $cp, $ville)
     {
         $sql = "UPDATE adresses SET ligne1 = ?, cp = ?, ville = ? WHERE id = ? AND user_idcli = ?";

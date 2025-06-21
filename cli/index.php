@@ -31,15 +31,17 @@ $action = $_GET['action'] ?? 'dashboard';
 $controller = new ClientController();
 $adresses = new AdressesController();
 
+//pretty($_GET);
 
 switch ($action) {
+    // ClientController
     case 'login':
         $controller->login();
         break;
     case 'logout':
         $controller->logout();
         break;
-        case 'pre_logout':
+    case 'pre_logout':
         $controller->preLogout();
         break;
     case 'devis':
@@ -93,24 +95,25 @@ switch ($action) {
     case 'new-password-ajax':
         $controller->newPasswordAjax();
         break;
-    case 'adresses':
-        $adresses->index();
+
+    case 'modifie_nom':
+        $controller->modifieNom();
         break;
-    case 'adresses_create':
-        $adresses->create();
+    case 'nom_update':
+        $controller->updateNom();
         break;
-    case 'adresses_store':
-        $adresses->store();
-        break;
-    case 'adresses_edit':
-        $adresses->edit();
-        break;
-    case 'adresses_update':
-        $adresses->update();
-        break;
-    case 'adresses_delete':
-        $adresses->delete();
-        break;
+    // AdressesController
+
+    // case 'modifie_adresse':
+    //     $adresses->modifieAdresse();
+    //     break;
+    // case 'ajoute_adresse':
+    //     $adresses->ajouteAdresse();
+    //     break;
+    // case 'ajoute_telephone':
+    //     $adresses->ajouteTelephone();
+    //     break;
+
     default:
         $controller->dashboard();
         break;

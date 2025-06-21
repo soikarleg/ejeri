@@ -18,7 +18,7 @@ require PROJECT_ROOT . '/cli/views/partials/header.php'; ?>
             <input type="text" class="form-control" id="ville" name="ville" value="<?= htmlspecialchars($adresse['ville']) ?>" required>
         </div>
         <button type="submit" class="btn btn-primary">Enregistrer</button>
-        <a href="?action=adresses" class="btn btn-secondary">Annuler</a>
+        <a href="/dashboard" class="btn btn-secondary">Annuler</a>
     </form>
 </div>
 <?php require PROJECT_ROOT . '/cli/views/partials/footer.php'; ?>

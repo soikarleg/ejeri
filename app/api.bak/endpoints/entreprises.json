@@ -1,0 +1,4 @@
+{
+  "endpoint":"https://recherche-entreprises.api.gouv.fr/search",
+  "param":"?q=,&categorie_entreprise=PME,&code_postal=,&minimal=true"
+}

@@ -1,0 +1,6 @@
+🔐 [2025-06-03 21:05:04] Verrouillage de ./app/.htaccess
+✅ [2025-06-03 21:05:04] ./app/.htaccess est maintenant protégé. Backup: ./app/.htaccess.bak
+🔓 [2025-06-03 21:05:29] Déverrouillage de ./app/.htaccess
+✅ [2025-06-03 21:05:29] ./app/.htaccess est maintenant modifiable.
+🔐 [2025-06-03 21:05:43] Verrouillage de ./app/.htaccess
+✅ [2025-06-03 21:05:43] ./app/.htaccess est maintenant protégé. Backup: ./app/.htaccess.bak

@@ -65665,3 +65665,269 @@
     "file": "\/homepages\/26\/d529006740\/htdocs\/0c8f54a6a56\/app\/src\/pages\/contacts\/contacts_inscription_bd.php",
     "line": 49
 }
+{
+    "date": "2025-04-19 21:16:54",
+    "severity": 2,
+    "message": "Cannot modify header information - headers already sent by (output started at \/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/function.php:5)",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/vendor\/delight-im\/auth\/src\/Auth.php",
+    "line": 75
+}
+{
+    "date": "2025-04-19 21:16:54",
+    "severity": 2,
+    "message": "Undefined array key \"db_host\"",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/class\/MaGesquo_connexion.php",
+    "line": 20
+}
+{
+    "date": "2025-04-19 21:16:54",
+    "severity": 2,
+    "message": "Undefined array key \"db_name\"",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/class\/MaGesquo_connexion.php",
+    "line": 21
+}
+{
+    "date": "2025-04-19 21:16:54",
+    "severity": 2,
+    "message": "Undefined array key \"db_user\"",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/class\/MaGesquo_connexion.php",
+    "line": 22
+}
+{
+    "date": "2025-04-19 21:16:54",
+    "severity": 2,
+    "message": "Undefined array key \"db_password\"",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/class\/MaGesquo_connexion.php",
+    "line": 23
+}
+{
+    "date": "2025-04-19 21:17:33",
+    "severity": 2,
+    "message": "Cannot modify header information - headers already sent by (output started at \/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/function.php:19)",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/vendor\/delight-im\/auth\/src\/Auth.php",
+    "line": 75
+}
+{
+    "date": "2025-04-19 21:17:33",
+    "severity": 2,
+    "message": "Undefined array key \"db_host\"",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/class\/MaGesquo_connexion.php",
+    "line": 20
+}
+{
+    "date": "2025-04-19 21:17:33",
+    "severity": 2,
+    "message": "Undefined array key \"db_name\"",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/class\/MaGesquo_connexion.php",
+    "line": 21
+}
+{
+    "date": "2025-04-19 21:17:33",
+    "severity": 2,
+    "message": "Undefined array key \"db_user\"",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/class\/MaGesquo_connexion.php",
+    "line": 22
+}
+{
+    "date": "2025-04-19 21:17:33",
+    "severity": 2,
+    "message": "Undefined array key \"db_password\"",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/class\/MaGesquo_connexion.php",
+    "line": 23
+}
+{
+    "date": "2025-04-19 21:19:08",
+    "severity": 2,
+    "message": "Cannot modify header information - headers already sent by (output started at \/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/function.php:19)",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/vendor\/delight-im\/auth\/src\/Auth.php",
+    "line": 75
+}
+{
+    "date": "2025-04-19 21:19:08",
+    "severity": 2,
+    "message": "Undefined array key \"mode\"",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/head.php",
+    "line": 7
+}
+{
+    "date": "2025-04-19 21:19:08",
+    "severity": 2,
+    "message": "Undefined array key \"mode\"",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/head.php",
+    "line": 10
+}
+{
+    "date": "2025-04-19 21:19:08",
+    "severity": 2,
+    "message": "Cannot modify header information - headers already sent by (output started at \/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/function.php:19)",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/landing\/deconnexion.php",
+    "line": 2
+}
+{
+    "date": "2025-04-19 21:19:08",
+    "severity": 2,
+    "message": "Cannot modify header information - headers already sent by (output started at \/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/function.php:19)",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/vendor\/delight-im\/auth\/src\/Auth.php",
+    "line": 75
+}
+{
+    "date": "2025-04-19 21:19:08",
+    "severity": 2,
+    "message": "Undefined array key \"mode\"",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/head.php",
+    "line": 7
+}
+{
+    "date": "2025-04-19 21:19:08",
+    "severity": 2,
+    "message": "Undefined array key \"mode\"",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/head.php",
+    "line": 10
+}
+{
+    "date": "2025-04-19 21:19:08",
+    "severity": 2,
+    "message": "Cannot modify header information - headers already sent by (output started at \/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/function.php:19)",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/landing\/deconnexion.php",
+    "line": 2
+}
+{
+    "date": "2025-04-19 21:19:08",
+    "severity": 2,
+    "message": "Cannot modify header information - headers already sent by (output started at \/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/function.php:19)",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/vendor\/delight-im\/auth\/src\/Auth.php",
+    "line": 75
+}
+{
+    "date": "2025-04-19 21:19:08",
+    "severity": 2,
+    "message": "Undefined array key \"mode\"",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/head.php",
+    "line": 7
+}
+{
+    "date": "2025-04-19 21:19:08",
+    "severity": 2,
+    "message": "Undefined array key \"mode\"",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/head.php",
+    "line": 10
+}
+{
+    "date": "2025-04-19 21:19:08",
+    "severity": 2,
+    "message": "Cannot modify header information - headers already sent by (output started at \/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/function.php:19)",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/landing\/deconnexion.php",
+    "line": 2
+}
+{
+    "date": "2025-04-19 21:19:09",
+    "severity": 2,
+    "message": "Cannot modify header information - headers already sent by (output started at \/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/function.php:19)",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/vendor\/delight-im\/auth\/src\/Auth.php",
+    "line": 75
+}
+{
+    "date": "2025-04-19 21:19:09",
+    "severity": 2,
+    "message": "Undefined array key \"mode\"",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/head.php",
+    "line": 7
+}
+{
+    "date": "2025-04-19 21:19:09",
+    "severity": 2,
+    "message": "Undefined array key \"mode\"",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/head.php",
+    "line": 10
+}
+{
+    "date": "2025-04-19 21:19:09",
+    "severity": 2,
+    "message": "Cannot modify header information - headers already sent by (output started at \/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/function.php:19)",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/landing\/deconnexion.php",
+    "line": 2
+}
+{
+    "date": "2025-04-19 21:19:09",
+    "severity": 2,
+    "message": "Cannot modify header information - headers already sent by (output started at \/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/function.php:19)",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/vendor\/delight-im\/auth\/src\/Auth.php",
+    "line": 75
+}
+{
+    "date": "2025-04-19 21:19:09",
+    "severity": 2,
+    "message": "Undefined array key \"mode\"",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/head.php",
+    "line": 7
+}
+{
+    "date": "2025-04-19 21:19:09",
+    "severity": 2,
+    "message": "Undefined array key \"mode\"",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/head.php",
+    "line": 10
+}
+{
+    "date": "2025-04-19 21:19:09",
+    "severity": 2,
+    "message": "Cannot modify header information - headers already sent by (output started at \/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/function.php:19)",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/landing\/deconnexion.php",
+    "line": 2
+}
+{
+    "date": "2025-04-19 21:19:09",
+    "severity": 2,
+    "message": "Cannot modify header information - headers already sent by (output started at \/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/function.php:19)",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/vendor\/delight-im\/auth\/src\/Auth.php",
+    "line": 75
+}
+{
+    "date": "2025-04-19 21:19:09",
+    "severity": 2,
+    "message": "Undefined array key \"mode\"",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/head.php",
+    "line": 7
+}
+{
+    "date": "2025-04-19 21:19:09",
+    "severity": 2,
+    "message": "Undefined array key \"mode\"",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/head.php",
+    "line": 10
+}
+{
+    "date": "2025-04-19 21:19:09",
+    "severity": 2,
+    "message": "Cannot modify header information - headers already sent by (output started at \/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/function.php:19)",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/landing\/deconnexion.php",
+    "line": 2
+}
+{
+    "date": "2025-04-19 21:19:09",
+    "severity": 2,
+    "message": "Cannot modify header information - headers already sent by (output started at \/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/function.php:19)",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/vendor\/delight-im\/auth\/src\/Auth.php",
+    "line": 75
+}
+{
+    "date": "2025-04-19 21:19:09",
+    "severity": 2,
+    "message": "Undefined array key \"mode\"",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/head.php",
+    "line": 7
+}
+{
+    "date": "2025-04-19 21:19:09",
+    "severity": 2,
+    "message": "Undefined array key \"mode\"",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/head.php",
+    "line": 10
+}
+{
+    "date": "2025-04-19 21:19:09",
+    "severity": 2,
+    "message": "Cannot modify header information - headers already sent by (output started at \/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/function.php:19)",
+    "file": "\/homepages\/26\/d529006740\/htdocs\/006bb65c0a6\/app\/inc\/landing\/deconnexion.php",
+    "line": 2
+}
