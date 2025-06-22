@@ -32,7 +32,7 @@
                         </h2>
                         <div id="faq-acompte" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-faq">
                             <div class="accordion-body">
-                                <p>Non, s'agissant de prestations sans apport de fournitures, vous n'avez pas besoin de verser d'acompte. Le règlement des prestations se fait directement après la prestation. Nous acceptons les paiements que par virement ou par carte bancaire.</p>
+                                <p>Oui, pour valider votre devis, un acompte de 60% du montant de la prestation est demandé. Son versement vaut acceptation pleine et entière du devis et dès réception de celui-ci, une date d’intervention sera fixée. Le solde, quant à lui, est à régler à réception de la prestation. Les règlements se font exclusivement par virement ou carte bancaire.</p>
                                 <div class="text-right"><a href="#contact" class="devis-btn" onclick="document.getElementById('sujet').value = 'Demande d\'information sur les acomptes'">Je souhaite plus d'infos</a></div>
                             </div>
                         </div>
