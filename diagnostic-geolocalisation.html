@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnostic Géolocalisation EJERI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h4><i class="bi bi-bug me-2"></i>Diagnostic Géolocalisation EJERI</h4>
+                    </div>
+                    <div class="card-body">
+                        
+                        <!-- Informations client -->
+                        <div class="mb-4">
+                            <h5><i class="bi bi-info-circle me-2"></i>Informations Client</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p><strong>User Agent:</strong><br>
+                                    <small id="userAgent" class="text-muted"></small></p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><strong>Timestamp:</strong><br>
+                                    <small id="timestamp" class="text-muted"></small></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Boutons de test -->
+                        <div class="mb-4">
+                            <button id="btnTestDiagnostic" class="btn btn-primary me-2">
+                                <i class="bi bi-search me-1"></i>Lancer Diagnostic
+                            </button>
+                            <button id="btnTestGeoloc" class="btn btn-success me-2">
+                                <i class="bi bi-geo-alt me-1"></i>Test Géolocalisation
+                            </button>
+                            <button id="btnTestHTML5" class="btn btn-info">
+                                <i class="bi bi-globe me-1"></i>Test HTML5 Geo
+                            </button>
+                        </div>
+
+                        <!-- Zone de résultats -->
+                        <div id="results">
+                            <div class="alert alert-info">
+                                <i class="bi bi-info-circle me-2"></i>
+                                Cliquez sur un bouton pour démarrer les tests de géolocalisation.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Initialisation
+        document.getElementById('userAgent').textContent = navigator.userAgent;
+        document.getElementById('timestamp').textContent = new Date().toLocaleString('fr-FR');
+
+        // Test diagnostic complet
+        document.getElementById('btnTestDiagnostic').addEventListener('click', async function() {
+            this.disabled = true;
+            const results = document.getElementById('results');
+            
+            results.innerHTML = `
+                <div class="alert alert-info">
+                    <div class="spinner-border spinner-border-sm me-2" role="status"></div>
+                    Exécution du diagnostic...
+                </div>
+            `;
+
+            try {
+                const response = await fetch('/api/secteur/diagnostic');
+                const data = await response.json();
+                
+                if (data.success) {
+                    displayDiagnostic(data.diagnostic);
+                } else {
+                    throw new Error(data.error || 'Erreur inconnue');
+                }
+            } catch (error) {
+                results.innerHTML = `
+                    <div class="alert alert-danger">
+                        <i class="bi bi-exclamation-triangle me-2"></i>
+                        <strong>Erreur:</strong> ${error.message}
+                    </div>
+                `;
+            } finally {
+                this.disabled = false;
+            }
+        });
+
+        // Test géolocalisation simple
+        document.getElementById('btnTestGeoloc').addEventListener('click', async function() {
+            this.disabled = true;
+            const results = document.getElementById('results');
+            
+            results.innerHTML = `
+                <div class="alert alert-info">
+                    <div class="spinner-border spinner-border-sm me-2" role="status"></div>
+                    Test de géolocalisation...
+                </div>
+            `;
+
+            try {
+                const response = await fetch('/api/secteur/by-ip');
+                
+                // Vérifier le status HTTP
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                // Récupérer le texte brut d'abord
+                const responseText = await response.text();
+                console.log('Réponse brute:', responseText);
+                
+                // Essayer de parser le JSON
+                let data;
+                try {
+                    data = JSON.parse(responseText);
+                } catch (jsonError) {
+                    throw new Error(`Erreur JSON: ${jsonError.message}. Réponse reçue: ${responseText.substring(0, 200)}...`);
+                }
+                
+                if (data.success) {
+                    displaySecteurResult(data);
+                } else {
+                    throw new Error(data.error || 'Erreur inconnue');
+                }
+            } catch (error) {
+                results.innerHTML = `
+                    <div class="alert alert-danger">
+                        <i class="bi bi-exclamation-triangle me-2"></i>
+                        <strong>Erreur:</strong> ${error.message}
+                    </div>
+                `;
+            } finally {
+                this.disabled = false;
+            }
+        });
+
+        // Test géolocalisation HTML5
+        document.getElementById('btnTestHTML5').addEventListener('click', function() {
+            this.disabled = true;
+            const results = document.getElementById('results');
+            
+            if (!navigator.geolocation) {
+                results.innerHTML = `
+                    <div class="alert alert-warning">
+                        <i class="bi bi-exclamation-triangle me-2"></i>
+                        La géolocalisation HTML5 n'est pas supportée par votre navigateur.
+                    </div>
+                `;
+                this.disabled = false;
+                return;
+            }
+
+            results.innerHTML = `
+                <div class="alert alert-info">
+                    <div class="spinner-border spinner-border-sm me-2" role="status"></div>
+                    Demande d'autorisation géolocalisation...
+                </div>
+            `;
+
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    const lat = position.coords.latitude;
+                    const lon = position.coords.longitude;
+                    
+                    results.innerHTML = `
+                        <div class="alert alert-success">
+                            <h5><i class="bi bi-check-circle me-2"></i>Géolocalisation HTML5 Réussie</h5>
+                            <p><strong>Latitude:</strong> ${lat}</p>
+                            <p><strong>Longitude:</strong> ${lon}</p>
+                            <p><strong>Précision:</strong> ${position.coords.accuracy} mètres</p>
+                            <small class="text-muted">Cette géolocalisation est généralement plus précise que l'IP.</small>
+                        </div>
+                    `;
+                    this.disabled = false;
+                },
+                (error) => {
+                    let message = 'Erreur inconnue';
+                    switch(error.code) {
+                        case error.PERMISSION_DENIED:
+                            message = 'Permission refusée par l\'utilisateur';
+                            break;
+                        case error.POSITION_UNAVAILABLE:
+                            message = 'Position non disponible';
+                            break;
+                        case error.TIMEOUT:
+                            message = 'Timeout de la requête';
+                            break;
+                    }
+                    
+                    results.innerHTML = `
+                        <div class="alert alert-warning">
+                            <i class="bi bi-exclamation-triangle me-2"></i>
+                            <strong>Géolocalisation HTML5 échouée:</strong> ${message}
+                        </div>
+                    `;
+                    this.disabled = false;
+                },
+                {
+                    enableHighAccuracy: true,
+                    timeout: 10000,
+                    maximumAge: 60000
+                }
+            );
+        });
+
+        function displayDiagnostic(diagnostic) {
+            const ipType = diagnostic.type_ip;
+            const ipClass = ipType === 'IPv6' ? 'text-info' : 'text-primary';
+            
+            let html = `
+                <div class="alert alert-success">
+                    <h5><i class="bi bi-check-circle me-2"></i>Diagnostic Terminé</h5>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-header">
+                                <h6><i class="bi bi-globe me-2"></i>Détection IP</h6>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>IP Détectée:</strong> <span class="${ipClass}">${diagnostic.ip_detectee}</span></p>
+                                <p><strong>Type:</strong> <span class="${ipClass}">${ipType}</span></p>
+                                <p><strong>IP Locale:</strong> ${diagnostic.is_local ? '<span class="text-warning">Oui</span>' : '<span class="text-success">Non</span>'}</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-header">
+                                <h6><i class="bi bi-server me-2"></i>Variables Serveur</h6>
+                            </div>
+                            <div class="card-body">
+            `;
+            
+            for (const [key, value] of Object.entries(diagnostic.server_vars)) {
+                const isSet = value !== 'non défini';
+                html += `<p><strong>${key}:</strong> <span class="${isSet ? 'text-success' : 'text-muted'}">${value}</span></p>`;
+            }
+            
+            html += `
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            if (diagnostic.test_apis) {
+                html += `
+                    <div class="card">
+                        <div class="card-header">
+                            <h6><i class="bi bi-cloud me-2"></i>Test des APIs de Géolocalisation</h6>
+                        </div>
+                        <div class="card-body">
+                `;
+                
+                for (const [api, result] of Object.entries(diagnostic.test_apis)) {
+                    const statusClass = result.success ? 'text-success' : 'text-danger';
+                    const statusIcon = result.success ? 'check-circle' : 'x-circle';
+                    
+                    html += `
+                        <div class="mb-3">
+                            <h6><i class="bi bi-${statusIcon} me-2 ${statusClass}"></i>${api}</h6>
+                            <p><strong>Succès:</strong> <span class="${statusClass}">${result.success ? 'Oui' : 'Non'}</span></p>
+                            ${result.success ? `
+                                <p><strong>Coordonnées:</strong> ${result.has_coordinates ? '<span class="text-success">Disponibles</span>' : '<span class="text-warning">Non disponibles</span>'}</p>
+                                <p><strong>Taille réponse:</strong> ${result.response_size} octets</p>
+                            ` : `
+                                <p><strong>Erreur:</strong> <span class="text-danger">${result.error || 'Inconnue'}</span></p>
+                            `}
+                        </div>
+                    `;
+                }
+                
+                html += `
+                        </div>
+                    </div>
+                `;
+            }
+
+            document.getElementById('results').innerHTML = html;
+        }
+
+        function displaySecteurResult(data) {
+            const secteur = data.secteur;
+            
+            let html = `
+                <div class="alert alert-success">
+                    <h5><i class="bi bi-check-circle me-2"></i>Secteur Trouvé</h5>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h6><i class="bi bi-geo-alt me-2"></i>${secteur.nom}</h6>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Source:</strong> ${data.source}</p>
+                        <p><strong>Responsable:</strong> ${secteur.responsable.nom}</p>
+                        <p><strong>Téléphone:</strong> ${secteur.responsable.telephone}</p>
+                        <p><strong>Email:</strong> ${secteur.responsable.email}</p>
+                        <p><strong>Timestamp:</strong> ${data.timestamp}</p>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('results').innerHTML = html;
+        }
+    </script>
+</body>
+</html>

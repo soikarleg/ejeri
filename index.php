@@ -11,8 +11,12 @@ $_SESSION['token'] = $token;
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>EJERI Jardins</title>
-  <meta name="description" content="enooki">
-  <meta name="keywords" content="enooki jardins entretien tonte">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <meta name="author" content="otto">
+  <meta name="description" content="EJERI Jardins - Entretien de Jardins Et Réduction d'Impôts">
+  <meta name="facebook-domain-verification" content="fqmbr0cx3qcnbvzmsi1va7pps7bxyc" />
+
+  <meta name="keywords" content="EJERI Jardins jardins entretien tonte taille débroussaillage réduction d'impôts crédit d'impôt services à la personne">
   <!-- Favicons -->
   <link href="assets/img/png/enooki_ico_blanc.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -24,7 +28,8 @@ $_SESSION['token'] = $token;
     rel="stylesheet">
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!----> <link href="/shared/assets/css/enooki.css" rel="stylesheet"> 
+  <!---->
+  <link href="/shared/assets/css/enooki.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -46,9 +51,9 @@ $_SESSION['token'] = $token;
 <body class="index-page">
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-      <a href="/" class="logo d-flex align-items-center" aria-label="Accueil Enooki">
-        <img src="assets/img/png/enooki_jardins_blanc.png" alt="Logo Enooki Jardins" height="100%">
-        <h1 class="visually-hidden">Enooki - Services de jardinage à domicile</h1>
+      <a href="/" class="logo d-flex align-items-center" aria-label="Accueil EJERI Jardins">
+        <img src="assets/img/logo/logo_ejeri.png" alt="Logo EJERI Jardins" height="140%">
+        <h1 class="visually-hidden">EJERI Jardins - Entretien de jardins et réduction d'impôts</h1>
       </a>
       <nav id="navmenu" class="navmenu" aria-label="Menu principal">
         <ul>
@@ -56,8 +61,8 @@ $_SESSION['token'] = $token;
           <li><a href="#services">Entretien de jardins</a></li>
           <li><a href="#team">Nos jardiniers</a></li>
           <li><a href="#faq">Vos questions</a></li>
-          <li><a href="https://cli.enooki.fr" class="client-btn">Espace client</a></li>
-          <!-- <li><a href=" https://pro.enooki.fr" target="_blank">Intervenant</a></li>
+          <!--   <li><a href="https://cli.enooki.fr" class="client-btn">Espace client</a></li>
+          <li><a href=" https://pro.enooki.fr" target="_blank">Intervenant</a></li>
           <li><a href="https://app.enooki.fr" target="_blank">Gestion</a></li> -->
         </ul>
         <button class="mobile-nav-toggle d-xl-none" aria-label="Ouvrir le menu mobile"><i class="bi bi-list"></i></button>
@@ -66,7 +71,7 @@ $_SESSION['token'] = $token;
   </header>
   <main class="main" id="main-content">
     <?php
-    include 'sections/hero.php';
+    include 'sections/hero2.php';
     include 'sections/prestations.php';
     include 'sections/reduction.php';
     include 'sections/team.php';
@@ -78,9 +83,9 @@ $_SESSION['token'] = $token;
     <div class="container">
       <div class="row gy-4">
         <div class="col-lg-4">
-          <h2 class="sitename visually-hidden">Enooki - Footer</h2>
-          <img src="assets/img/png/enooki_jardins_blanc.png" alt="Logo Enooki Jardins" width="50%">
-          <p>Je ne sais pas... je ne peux pas ! <br>Aucun souci, Enooki le fait pour moi.</p>
+          <h2 class="sitename visually-hidden">EJERI Jardins - Footer</h2>
+          <img src="assets/img/logo/logo_ejeri.png" alt="Logo EJERI Jardins" width="50%">
+          <p>Je ne sais pas... je ne peux pas !<br>EJERI Jardins le fait pour moi.</p>
           <div class="social-links d-flex justify-content-center" aria-label="Réseaux sociaux">
             <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
             <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
@@ -142,6 +147,9 @@ $_SESSION['token'] = $token;
   </script>-->
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Géolocalisation Secteur (version stable) -->
+  <script src="/shared/assets/js/secteur-geolocalisation-stable.js"></script>
 </body>
 
 </html>

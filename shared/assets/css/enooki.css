@@ -26,7 +26,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #030303; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #2a2c39; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #135c13; /* Accent color 009400 that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #86bc45; /* Accent color 009400 that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -49,8 +49,8 @@
 }
 
 .dark-background {
-   --background-color: #20222b;  
-  /*--background-color: #000000;*/
+  /* --background-color: #20222b; */ 
+  --background-color: #000000;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --fond-color: #0b0b0b;
@@ -59,7 +59,7 @@
   /* --acc-color: #a7cca7; */
   --acc-color: #c9c9c9;
   --cli-color:#494949;
-  --accent-color: #448644;
+  --accent-color: #86bc45;
   --background-card-body:#444855;
   --background-card-header:#333640
 }
@@ -400,7 +400,7 @@ background-color: var(--background-card-body);
 }
 
 .header .logo img {
-  max-height: 42px;
+  max-height: 120px;
   margin-right: 8px;
 }
 
@@ -471,6 +471,7 @@ background-color: var(--background-card-body);
   .navmenu .active,
   .navmenu .active:focus {
     border-bottom: 5px solid var(--accent-color);
+
     /* background-color: var(--nav-hover-color); */
   }
 
@@ -537,11 +538,15 @@ background-color: var(--background-card-body);
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
     color: var(--nav-color);
-    font-size: 28px;
-    line-height: 0;
-    margin-right: 10px;
-    cursor: pointer;
-    transition: color 0.3s;
+      font-size: 28px;
+      line-height: 0;
+      margin-right: 14px;
+      cursor: pointer;
+      transition: color 0.3s;
+      border-radius: 6px;
+      border: 0px solid #000;
+      background-color: var(--accent-color);
+      padding: 5px;
   }
 
   .navmenu {
@@ -887,7 +892,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 10px 0px 0px 0px;
+  padding: 100px 0px 0px 0px;
   scroll-margin-top: 77px;
   overflow: clip;
 }
@@ -1012,7 +1017,7 @@ section,
 }
 
 #slogan {
-  font-size: 24px;
+  font-size: 80px;
   margin-top: 50px !important;
   font-weight: 700;
 }
@@ -1027,7 +1032,11 @@ section,
   }
   #imgtitre {
     margin-top: 10%;
-    min-width: 30%;
+    min-width: 15%;
+  }
+
+  .titrehero{
+    margin-top:10%
   }
 }
 
@@ -1035,12 +1044,14 @@ section,
   .hero .carousel-container {
     min-height: 90vh;
   }
-
+    .titrehero {
+      margin-top: 20%
+    }
   .hero h2 {
     font-size: 28px;
   }
   #slogan {
-    font-size: 26px;
+    font-size: 33px;
     margin-top: 120px !important;
     font-weight: 700;
   }
@@ -2965,4 +2976,303 @@ button[type="submit"] {
 }
 .table.compte tr {
   border-bottom: 1px solid #414141;
+}
+
+/*--------------------------------------------------------------
+# Géolocalisation Secteurs
+--------------------------------------------------------------*/
+.team-member {
+  background: var(--surface-color);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  height: 100%;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.team-member .member-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  margin-bottom: 15px;
+}
+
+.team-member .member-img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.team-member:hover .member-img img {
+  transform: scale(1.05);
+}
+
+.team-member .member-info {
+  text-align: center;
+}
+
+.team-member .member-info h4 {
+  color: var(--heading-color);
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.team-member .member-info span {
+  color: var(--accent-color);
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.team-member .member-info p {
+  color: var(--default-color);
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.team-member .member-info a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.team-member .member-info a:hover {
+  color: var(--heading-color);
+}
+
+/* Cartes secteur personnalisées */
+.card-secteur {
+  background: #404356;
+  border: none;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card-secteur:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-secteur .card-header {
+  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), transparent 20%));
+  color: var(--contrast-color);
+  border: none;
+  padding: 15px 20px;
+  font-weight: 600;
+}
+
+.card-secteur .card-body {
+  background: #404356;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.card-secteur .card-body i {
+  width: 20px;
+  text-align: center;
+}
+
+.card-secteur .card-body a {
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.card-secteur .card-body a:hover {
+  color: var(--accent-color);
+}
+
+/* Sélecteur de secteur */
+.secteur-selector {
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-radius: var(--border-radius);
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.secteur-selector:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 0.2rem color-mix(in srgb, var(--accent-color), transparent 75%);
+}
+
+/* Notifications */
+.notification-secteur {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  min-width: 300px;
+  animation: slideInRight 0.3s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Loading spinner personnalisé */
+.spinner-secteur {
+  width: 2rem;
+  height: 2rem;
+  border: 0.25em solid rgba(var(--accent-color), 0.25);
+  border-right-color: var(--accent-color);
+  border-radius: 50%;
+  animation: spinner-rotate 0.75s linear infinite;
+}
+
+@keyframes spinner-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive pour les secteurs */
+@media (max-width: 768px) {
+  .team-member .member-img img {
+    height: 150px;
+  }
+  
+  .card-secteur .card-body {
+    padding: 15px;
+  }
+  
+  .notification-secteur {
+    right: 10px;
+    left: 10px;
+    min-width: auto;
+  }
+}
+
+/* Integration avec le design existant */
+.info-item.secteur-info {
+  background: var(--surface-color);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  margin-bottom: 20px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item.secteur-item {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  padding: 10px 0;
+}
+
+.list-group-item.secteur-item:last-child {
+  border-bottom: none;
+}
+
+/* Protection contre le scintillement des images */
+#team-secteur img {
+  transition: none !important;
+  animation: none !important;
+}
+
+#team-secteur .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Stabilisation de l'affichage pendant le chargement */
+.secteur-stable {
+  min-height: 200px;
+  position: relative;
+}
+
+.secteur-stable .spinner-border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Éviter les rechargements visuels */
+#secteur-info,
+#team-secteur {
+  transition: opacity 0.2s ease;
+}
+
+#secteur-info.loading,
+#team-secteur.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Optimisation performances */
+.team-member img {
+  will-change: auto;
+  backface-visibility: hidden;
+}
+
+/* Styles pour éviter le scintillement des sections géolocalisées */
+.secteur-card,
+.team-member-container {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.member-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.member-image {
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.member-image:hover {
+  transform: scale(1.05);
+}
+
+/* Protection contre le scintillement des images */
+img[alt]:empty::before {
+  content: attr(alt);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f8f9fa;
+  color: #6c757d;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Animations fluides pour les transitions de secteur */
+#secteur-info,
+#team-secteur {
+  min-height: 100px;
+  transition: all 0.3s ease;
+}
+
+/* Spinner de chargement amélioré */
+.spinner-border {
+  animation: spinner-border .75s linear infinite;
+}
+
+/* Notifications flottantes */
+.notification-secteur {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  animation: slideInRight 0.3s ease;
 }

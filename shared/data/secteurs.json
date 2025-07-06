@@ -1,0 +1,130 @@
+{
+  "secteurs": [
+    {
+      "id": "nantes",
+      "nom": "EJERI Jardins - Nantes",
+      "centre": {
+        "latitude": 47.2184,
+        "longitude": -1.5536
+      },
+      "rayon_km": 25,
+      "contact": {
+        "adresse": "123 Rue des Jardins, 44000 Nantes",
+        "telephone": "02 40 89 15 42",
+        "email": "nantes@ejeri.fr"
+      },
+      "responsable": {
+        "nom": "Marie DUBOIS",
+        "titre": "Responsable secteur Nantes",
+        "photo": "/shared/assets/img/team/marie-dubois.jpg",
+        "telephone": "06 12 34 56 78",
+        "email": "marie.dubois@ejeri.fr"
+      }
+    },
+    {
+      "id": "cholet",
+      "nom": "EJERI Jardins - Cholet",
+      "centre": {
+        "latitude": 47.0588,
+        "longitude": -0.8804
+      },
+      "rayon_km": 25,
+      "contact": {
+        "adresse": "456 Avenue du Parc, 49300 Cholet",
+        "telephone": "02 41 75 28 93",
+        "email": "cholet@ejeri.fr"
+      },
+      "responsable": {
+        "nom": "Pierre MARTIN",
+        "titre": "Responsable secteur Cholet",
+        "photo": "/shared/assets/img/team/pierre-martin.jpg",
+        "telephone": "06 23 45 67 89",
+        "email": "pierre.martin@ejeri.fr"
+      }
+    },
+    {
+      "id": "larochesuryon",
+      "nom": "EJERI Jardins - La Roche sur Yon",
+      "centre": {
+        "latitude": 46.6700,
+        "longitude": -1.4269
+      },
+      "rayon_km": 25,
+      "contact": {
+        "adresse": "789 Boulevard Vert, 85000 La Roche-sur-Yon",
+        "telephone": "02 51 62 84 37",
+        "email": "larochesuryon@ejeri.fr"
+      },
+      "responsable": {
+        "nom": "Sophie BERNARD",
+        "titre": "Responsable secteur La Roche-sur-Yon",
+        "photo": "/shared/assets/img/team/sophie-bernard.jpg",
+        "telephone": "06 34 56 78 90",
+        "email": "sophie.bernard@ejeri.fr"
+      }
+    },
+    {
+      "id": "orleans",
+      "nom": "EJERI Jardins - Orléans",
+      "centre": {
+        "latitude": 47.9029,
+        "longitude": 1.9039
+      },
+      "rayon_km": 30,
+      "contact": {
+        "adresse": "321 Rue des Roses, 45000 Orléans",
+        "telephone": "02 38 94 51 76",
+        "email": "orleans@ejeri.fr"
+      },
+      "responsable": {
+        "nom": "Thomas LEROY",
+        "titre": "Responsable secteur Orléans",
+        "photo": "/shared/assets/img/team/thomas-leroy.jpg",
+        "telephone": "06 45 67 89 01",
+        "email": "thomas.leroy@ejeri.fr"
+      }
+    },
+    {
+      "id": "lamottebeuvron",
+      "nom": "EJERI Jardins - Lamotte-Beuvron",
+      "centre": {
+        "latitude": 47.6014,
+        "longitude": 2.0306
+      },
+      "rayon_km": 30,
+      "contact": {
+        "adresse": "654 Place du Marché, 41600 Lamotte-Beuvron",
+        "telephone": "02 54 73 69 28",
+        "email": "lamottebeuvron@ejeri.fr"
+      },
+      "responsable": {
+        "nom": "Julie MOREAU",
+        "titre": "Responsable secteur Lamotte-Beuvron",
+        "photo": "/shared/assets/img/team/julie-moreau.jpg",
+        "telephone": "06 56 78 90 12",
+        "email": "julie.moreau@ejeri.fr"
+      }
+    }
+  ],
+  "secteur_defaut": {
+    "id": "nantes",
+    "nom": "EJERI Jardins - Secteur principal",
+    "centre": {
+      "latitude": 47.2184,
+      "longitude": -1.5536
+    },
+    "rayon_km": 50,
+    "contact": {
+      "adresse": "Siège social, 44000 Nantes",
+      "telephone": "02 40 89 15 42",
+      "email": "contact@ejeri.fr"
+    },
+    "responsable": {
+      "nom": "Équipe EJERI Jardins",
+      "titre": "Service client",
+      "photo": "/shared/assets/img/team/equipe-ejeri.jpg",
+      "telephone": "02 40 89 15 42",
+      "email": "contact@ejeri.fr"
+    }
+  }
+}

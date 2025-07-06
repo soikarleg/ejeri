@@ -1,7 +1,7 @@
 <section id="hero" class="hero section dark-background">
-    <img id="imgtitre" src="assets/img/png/enooki_jardins_blanc.png" alt="" width="25%">
+    <!----> <img id="imgtitre" src="assets/img/png/sap1.png" alt="" width="10%">
     <p id="slogan" class="text-bold text-center" style="margin-bottom:70px">Je ne sais pas... je ne peux pas !</br>
-        Aucun souci, <span><img src="assets/img/png/enooki_blanc.png" alt="" height="18px" class="mr-2" style="margin-bottom:6px"></span> le fait pour moi.
+       <span><img src="assets/img/logo/logo_ejeri.png" alt="" height="50px" class="mr-2" style="margin-bottom:6px"></span> le fait pour moi.
     </p>
 
     <a href="#services" class="devis-btn" style="margin-bottom:70px" onclick="document.getElementById('sujet').value = 'Demande de devis'">Nos prestations</a>

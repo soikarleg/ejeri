@@ -1,7 +1,7 @@
 <section id="services" class="services section ">
     <div class="container section-title" data-aos="fade-up">
         <h2>Notre vocation</h2>
-        <p><span><img src="assets/img/png/enooki_ico_blanc.png" alt="" height="35px" style="margin-top:-5px;margin-right:10px"></span>100% entretien de jardins<br></p>
+        <p><span><img src="favicon.png" alt="" height="35px" style="margin-top:-5px;margin-right:10px"></span>100% entretien de jardins<br></p>
     </div>
     <div class="container py-3">
         <div class="">
@@ -115,6 +115,6 @@
 
         </div>
         <p class="card-title-one myshadow p-3" data-aos="fade-up">Ponctuelle ou régulière ?</p>
-                    <p class="card-body" data-aos="fade-up">Nous proposons des prestations ponctuelles ou régulières, selon vos besoins en fonction de vos priorités et de votre budget. Nos tarifs incluent le jardinier, les matériels, le déplacement et les droits de décharges.</p>
+        <p class="card-body" data-aos="fade-up">Nous proposons des prestations ponctuelles ou régulières, selon vos besoins en fonction de vos priorités et de votre budget. Nos tarifs incluent le jardinier, les matériels, le déplacement et les droits de décharges.</p>
     </div>
 </section>

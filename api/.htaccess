@@ -1,16 +1,23 @@
 RewriteEngine On
 
-# Redirection des requêtes vers index.php
+# Routes API Secteur (nouvelles)
+RewriteRule ^secteur/by-ip/?$ index.php [QSA,L]
+RewriteRule ^secteur/all/?$ index.php [QSA,L]
+RewriteRule ^secteur/set-force/?$ index.php [QSA,L]
+RewriteRule ^secteur/clear-cache/?$ index.php [QSA,L]
+RewriteRule ^secteur/diagnostic/?$ index.php [QSA,L]
+
+# Routes existantes (compatibilité)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-#RewriteRule ^api/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/?$ index.php?module=$1&action=$2 [L,QSA]
-#RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
-# Optionnel : Gérer les requêtes à la racine de l'API sans 'api/' (si nécessaire)
 RewriteRule ^([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/?$ index.php?groupe=$1&action=$2 [L,QSA]
 
+# Gestion des requêtes OPTIONS (preflight CORS)
+RewriteCond %{REQUEST_METHOD} OPTIONS
+RewriteRule ^(.*)$ index.php [QSA,L]
 
 <IfModule mod_headers.c>
-    Header set Access-Control-Allow-Origin "https://api.ottovongruff"
-    Header set Access-Control-Allow-Methods "HEAD, GET, POST, PUT, DELETE, OPTIONS"
-    # Header set Access-Control-Allow-Headers "Content-Type, Authorization"
+    Header always set Access-Control-Allow-Origin "*"
+    Header always set Access-Control-Allow-Methods "HEAD, GET, POST, PUT, DELETE, OPTIONS"
+    Header always set Access-Control-Allow-Headers "Content-Type, Authorization, X-Requested-With"
 </IfModule>
