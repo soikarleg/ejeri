@@ -114,7 +114,7 @@
 
 
         </div>
-        <p class="card-title-one myshadow p-3" data-aos="fade-up">Ponctuelle ou régulière ?</p>
-        <p class="card-body" data-aos="fade-up">Nous proposons des prestations ponctuelles ou régulières, selon vos besoins en fonction de vos priorités et de votre budget. Nos tarifs incluent le jardinier, les matériels, le déplacement et les droits de décharges.</p>
+        <!-- <p class="card-title-one myshadow p-3" data-aos="fade-up">Ponctuelle ou régulière ?</p>
+        <p class="card-body" data-aos="fade-up">Nous proposons des prestations ponctuelles ou régulières, selon vos besoins en fonction de vos priorités et de votre budget. Nos tarifs incluent le jardinier, les matériels, le déplacement et les droits de décharges.</p> -->
     </div>
 </section>
