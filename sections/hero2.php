@@ -7,8 +7,21 @@
   <p id="slogan" class="text-bold text-center" style="margin-bottom:70px">Je ne sais pas... je ne peux pas !</br>
     <span><img src="assets/img/logo/logo_ejeri.png" alt="" height="50px" class="mr-2" style="margin-bottom:6px"></span> le fait pour moi.
   </p>-->
-    <p id="slogan" class="text-bold text-center" style="margin-bottom:70px">Entretien de jardins et réduction d'impôts</p>
+    <p id="slogan" class="text-bold text-center" style="margin-bottom:60px">Entretien de jardins et réduction d'impôts</p>
   </div>
+  <div id="cpform" class="input-group" style="margin-bottom:5px;margin-left:auto;margin-right:auto">
+    <input style="max-height:36px" type="text"
+      id="code-postal"
+      class="form-control"
+      placeholder="Votre code postal"
+      maxlength="5"
+      pattern="[0-9]{5}">
+    <button class="devis-btn" type="button" id="btn-rechercher">
+      <i class="bi bi-search"></i>
+      <!-- Code postal-->
+    </button>
+  </div>
+  <p id="team-sec"></p>
   <a href="#services" class="devis-btn" style="margin-bottom:70px" onclick="document.getElementById('sujet').value = 'Demande de devis'">Nos prestations</a>
 
   <!-- <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"

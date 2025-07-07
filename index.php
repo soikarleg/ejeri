@@ -52,7 +52,7 @@ $_SESSION['token'] = $token;
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
       <a href="/" class="logo d-flex align-items-center" aria-label="Accueil EJERI Jardins">
-        <img src="assets/img/logo/logo_ejeri.png" alt="Logo EJERI Jardins" height="140%">
+        <img src="assets/img/logo/logo_ejeri.png" alt="Logo EJERI Jardins" height="120%">
         <h1 class="visually-hidden">EJERI Jardins - Entretien de jardins et réduction d'impôts</h1>
       </a>
       <nav id="navmenu" class="navmenu" aria-label="Menu principal">
@@ -73,8 +73,8 @@ $_SESSION['token'] = $token;
     <?php
     include 'sections/hero2.php';
     include 'sections/prestations.php';
-    include 'sections/reduction.php';
-    include 'sections/team.php';
+    // include 'sections/reduction.php';
+    include 'sections/teamlocal.php';
     include 'sections/faq.php';
     include 'sections/contact.php';
     ?>
@@ -148,8 +148,11 @@ $_SESSION['token'] = $token;
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <!-- Géolocalisation Secteur (version stable) -->
-  <script src="/shared/assets/js/secteur-geolocalisation-stable.js"></script>
+  <!-- Géolocalisation Secteur (version stable) - DÉSACTIVÉ -->
+  <!-- <script src="/shared/assets/js/secteur-geolocalisation-stable.js"></script> -->
+
+  <!-- Recherche équipe par code postal -->
+  <script src="/shared/assets/js/teamlocal-codepostal.js"></script>
 </body>
 
 </html>

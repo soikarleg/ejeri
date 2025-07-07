@@ -400,7 +400,7 @@ background-color: var(--background-card-body);
 }
 
 .header .logo img {
-  max-height: 120px;
+  max-height: 100px;
   margin-right: 8px;
 }
 
@@ -1021,9 +1021,13 @@ section,
   margin-top: 50px !important;
   font-weight: 700;
 }
+
+#cpform {
+  max-width: 10%;
+}
 @media (min-width: 1024px) {
   .hero p {
-    max-width: 60%;
+    max-width: 90%;
   }
 
   .hero .carousel-control-prev,
@@ -1037,6 +1041,9 @@ section,
 
   .titrehero{
     margin-top:10%
+  }
+  #cpform{
+    max-width: 20%;
   }
 }
 
@@ -1060,6 +1067,9 @@ section,
     display: none;
     min-width: 50%;
   }
+    #cpform {
+      max-width: 80%;
+    }
   .offset-3{margin-left:0 !important}
 }
 
@@ -3275,4 +3285,81 @@ img[alt]:empty::before {
 .notification-secteur {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   animation: slideInRight 0.3s ease;
+}
+
+/*--------------------------------------------------------------
+# Team Local Section (Code Postal System)
+--------------------------------------------------------------*/
+.team section {
+  padding: 60px 0;
+}
+
+.team .myshadow {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.team .myshadow:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.team .code-postal-input {
+  position: relative;
+}
+
+.team .code-postal-input input {
+  padding-right: 120px;
+}
+
+.team .contact-info {
+  line-height: 1.8;
+}
+
+.team .contact-info a {
+  color: var(--accent-color);
+}
+
+.team .contact-info a:hover {
+  color: var(--nav-hover-color);
+}
+
+.team .badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.team .card-body {
+  background-color: var(--surface-color);
+}
+
+/* Animations pour l'affichage des résultats */
+.team #team-secteur {
+  transition: all 0.3s ease-in-out;
+}
+
+.team .fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive pour la section team */
+@media (max-width: 768px) {
+  .team .card-body {
+    padding: 1rem !important;
+  }
+  
+  .team .btn-sm {
+    font-size: 0.8rem;
+    padding: 0.375rem 0.75rem;
+  }
 }

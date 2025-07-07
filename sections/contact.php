@@ -23,6 +23,9 @@
                         <div class="col-md-6 ">
                             <input type="text" class="form-control" name="telephone" placeholder="Téléphone">
                         </div>
+                        <div class="col-md-6 ">
+                            <input type="text" class="form-control" name="code_postal" placeholder="Code postal">
+                        </div>
                         <div class="col-md-12">
                             <input type="text" class="form-control" name="sujet" id="sujet" placeholder="Sujet" required="">
                         </div>
@@ -44,20 +47,20 @@
                 </form>
             </div><!-- End Contact Form -->
             <div class="col-lg-4">
-                <!-- Zone d'affichage du secteur détecté -->
+                <!-- Zone d'affichage du secteur détecté 
                 <div id="secteur-info" class="mb-4">
-                    <!-- Le contenu sera chargé via JavaScript -->
+                    
                     <div class="d-flex justify-content-center">
                         <div class="spinner-border text-success" role="status">
                             <span class="visually-hidden">Détection de votre secteur...</span>
                         </div>
                     </div>
-                </div>
+                </div>-->
 
                 <!-- Informations générales -->
                 <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                     <i class="bi bi-geo-alt flex-shrink-0"></i>
-                    <div>
+                    <div id="secteur-adresse">
                         <h3>Siège social</h3>
                         <p>3 place de l'Eglise 45740 Lailly-en-Val</p>
                         <p>RCS Orléans 000 000 000</p>
@@ -65,7 +68,7 @@
                     </div>
                 </div><!-- End Info Item -->
 
-                <!-- Bouton pour forcer l'affichage de tous les secteurs -->
+                <!-- Bouton pour forcer l'affichage de tous les secteurs 
                 <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
                     <i class="bi bi-buildings flex-shrink-0"></i>
                     <div>
@@ -97,9 +100,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div><!-- End Info Item -->
-            </div>
+                    </div>-->
+            </div><!-- End Info Item -->
         </div>
+    </div>
     </div>
 </section>

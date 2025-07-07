@@ -8,8 +8,8 @@
         <div class="row">
             <div class="col-lg-6 col-md-12 offset-3">
                 <div class="custom-accordion" id="accordion-faq">
-                    <h4 style="margin-bottom:20px;margin-top:20px"><span><img src="assets/img/png/enooki_ico_blanc.png" alt="" height="30px" style="margin-top:-5px;margin-right:10px"></span>Avant la prestation</h4>
-                    <div class="accordion-item">
+                    <h4 style="margin-bottom:20px;margin-top:20px"><span><img src="favicon.png" alt="" height="30px" style="margin-top:-5px;margin-right:10px"></span>Avant la prestation</h4>
+                    <!-- <div class="accordion-item">
                         <h2 class="mb-0">
                             <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq_compte2">
                                 Dois-je forcèment ouvrir un compte pour avoir un devis ?
@@ -22,7 +22,7 @@
                                 <div class="text-right"><a href="https://cli.enooki.fr" target="_blank" class="devis-btn" onclick="document.getElementById('sujet').value = 'Demande d\'information sur l\'ouverture du compte.'">Créer mon compte dès maintenant</a></div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="accordion-item">
                         <h2 class="mb-0">
                             <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
@@ -32,7 +32,7 @@
                         </h2>
                         <div id="faq-acompte" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-faq">
                             <div class="accordion-body">
-                                <p>Oui, pour valider votre devis, un acompte de 60% du montant de la prestation est demandé. Son versement vaut acceptation pleine et entière du devis et dès réception de celui-ci, une date d’intervention sera fixée. Le solde, quant à lui, est à régler à réception de la prestation. Les règlements se font exclusivement par virement ou carte bancaire.</p>
+                                <p>Oui, pour valider votre devis, un acompte de 60 % du montant de la prestation est demandé. Son versement vaut acceptation pleine et entière du devis. Dès réception de celui-ci, une date d’intervention sera fixée. Le solde, quant à lui, est à régler à réception de la prestation. Les règlements se font exclusivement par virement ou carte bancaire.</p>
                                 <div class="text-right"><a href="#contact" class="devis-btn" onclick="document.getElementById('sujet').value = 'Demande d\'information sur les acomptes'">Je souhaite plus d'infos</a></div>
                             </div>
                         </div>
@@ -53,7 +53,7 @@
                     </div>
                     <!-- -->
 
-                    <h4 style="margin-bottom:20px;margin-top:40px"><span><img src="assets/img/png/enooki_ico_blanc.png" alt="" height="30px" style="margin-top:-5px;margin-right:10px"></span>Pendant la prestation</h4>
+                    <h4 style="margin-bottom:20px;margin-top:40px"><span><img src="favicon.png" alt="" height="30px" style="margin-top:-5px;margin-right:10px"></span>Pendant la prestation</h4>
                     <div class="accordion-item">
                         <h2 class="mb-0">
                             <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq_photo2">
@@ -96,17 +96,17 @@
                             </div>
                         </div>
                     </div>
-                    <h4 style="margin-bottom:20px;margin-top:40px"><span><img src="assets/img/png/enooki_ico_blanc.png" alt="" height="30px" style="margin-top:-5px;margin-right:10px"></span>Après la prestation</h4>
+                    <h4 style="margin-bottom:20px;margin-top:40px"><span><img src="favicon.png" alt="" height="30px" style="margin-top:-5px;margin-right:10px"></span>Après la prestation</h4>
                     <div class="accordion-item">
                         <h2 class="mb-0">
                             <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapse-faq-2">
-                                Comment puis-je régler la prestation ?
+                                Quand et comment régler la prestation ?
                             </button>
                         </h2>
                         <div id="collapse-faq-2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-faq">
                             <div class="accordion-body">
-                                <p>C’est simple : une fois l’intervention réalisée, vous recevez un lien de paiement sécurisé. Vous pourrez régler directement via votre téléphone ou votre ordinateur. Vous recevrez dès lors votre facture et ensuite votre attestation fiscale en fin d'année.</p>
+                                <p>Le solde restant dû pour la prestation est à régler par virement bancaire à la fin de l’intervention. Une fois les travaux réalisés, vous recevrez la facture correspondante, et il vous suffira d’effectuer le virement en utilisant les coordonnées bancaires fournies.</p>
                                 <div class="text-right"><a href="#contact" class="devis-btn" onclick="document.getElementById('sujet').value = 'Demande d\'information complémentaire.'">Vous voulez des précisions ?</a></div>
                             </div>
                         </div>
@@ -122,6 +122,20 @@
                             <div class="accordion-body">
                                 <p>Absolument. Toutes nos prestations d’entretien de jardin ouvrent droit à un crédit d’impôt de 50 %, conformément au cadre des services à la personne. L’attestation annuelle vous est fournie automatiquement, directement depuis votre espace personnel.</p>
                                 <div class="text-right"><a href="#contact" class="devis-btn" onclick="document.getElementById('sujet').value = 'Demande d\'information complémentaire.'">Vous voulez des précisions ?</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse-faq-5">
+                                Que faire si je ne suis pas satisfait de la prestation ?
+                            </button>
+                        </h2>
+                        <div id="collapse-faq-5" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-faq">
+                            <div class="accordion-body">
+                                <p>Si quelque chose ne vous semble pas conforme ou si vous avez la moindre remarque suite à notre intervention, vous devez nous contacter, n’hésitez pas à nous en faire part. Le plus simple est de nous contacter par téléphone ou par e-mail le plus rapidement possible. Votre satisfaction est essentielle, et nous prendrons toujours le temps d’écouter vos retours pour trouver ensemble une solution adaptée.</p>
+                                <div class="text-right"><a href="#contact" class="devis-btn" onclick="document.getElementById('sujet').value = 'Remarque'">Une remarque à faire ?</a></div>
                             </div>
                         </div>
                     </div>
