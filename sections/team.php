@@ -48,7 +48,7 @@
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                     <div class="team-member">
                         <div class="member-img">
-                            <img src="assets/img/enooki_photos/clisson.png" class="img-fluid" alt="">
+                            <img src="assets/img/enooki_photos/clisson.png" class="img-fluid" alt="Entretien de jardins Clisson" />
                         </div>
                         <div class="member-info">
                             <h4>Renaud</h4>
@@ -61,7 +61,7 @@
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
                     <div class="team-member">
                         <div class="member-img">
-                            <img src="assets/img/enooki_photos/beaugency.png" class="img-fluid" alt="">
+                            <img src="assets/img/enooki_photos/beaugency.png" class="img-fluid" alt="Entretien de jardins Beaugency">
                         </div>
                         <div class="member-info">
                             <h4>François</h4>
@@ -74,7 +74,7 @@
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
                     <div class="team-member">
                         <div class="member-img">
-                            <img src="assets/img/enooki_photos/lailly.png" class="img-fluid" alt="">
+                            <img src="assets/img/enooki_photos/lailly.png" class="img-fluid" alt="Entretien de jardins Lailly-en-Val">
                         </div>
                         <div class="member-info">
                             <h4>Adrien</h4>
@@ -87,7 +87,7 @@
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
                     <div class="team-member">
                         <div class="member-img">
-                            <img src="assets/img/enooki_photos/enooki.png" class="img-fluid" alt="">
+                            <img src="assets/img/enooki_photos/enooki.png" class="img-fluid" alt="Entretien de jardins - Cugand Cholet La Roche-sur-Yon Lamotte-Beuvron">
                             <div class="social p-2">
                                 <p class="text-white">Contact pro 0238451578</p>
                             </div>
@@ -104,5 +104,5 @@
         </div>
     </div>
 
-    <img src="assets/img/svg/grass_noir_1.svg" alt="" srcset="" style="width:100%;margin: -20px 0px -1px auto">
+    <img src="assets/img/svg/grass_noir_1.svg" alt="Fond - Entretien de jardins" srcset="" style="width:100%;margin: -20px 0px -1px auto">
 </section>

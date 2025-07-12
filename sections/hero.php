@@ -1,7 +1,7 @@
 <section id="hero" class="hero section dark-background">
     <!----> <img id="imgtitre" src="assets/img/png/sap1.png" alt="" width="10%">
     <p id="slogan" class="text-bold text-center" style="margin-bottom:70px">Je ne sais pas... je ne peux pas !</br>
-       <span><img src="assets/img/logo/logo_ejeri.png" alt="" height="50px" class="mr-2" style="margin-bottom:6px"></span> le fait pour moi.
+        <span><img src="assets/img/logo/logo_ejeri.png" alt="Taille de haies et d'arbustes - Logo EJERI Jardins" height="50px" class="mr-2" style="margin-bottom:6px"></span> le fait pour moi.
     </p>
 
     <a href="#services" class="devis-btn" style="margin-bottom:70px" onclick="document.getElementById('sujet').value = 'Demande de devis'">Nos prestations</a>
@@ -21,5 +21,5 @@
             <use xlink:href="#wave-path" x="50" y="9"></use>
         </g>
     </svg> -->
-    <img src="assets/img/svg/grass_blanc_1.svg" alt="" srcset="" style="width:100%;margin: -50px 0px -1px auto">
+    <img src="assets/img/svg/grass_blanc_1.svg" alt="Logo - Entretien de jardins - tonte et taille" srcset="" style="width:100%;margin: -50px 0px -1px auto">
 </section>

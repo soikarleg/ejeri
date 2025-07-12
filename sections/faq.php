@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-12 offset-3">
                 <div class="custom-accordion" id="accordion-faq">
-                    <h4 style="margin-bottom:20px;margin-top:20px"><span><img src="favicon.png" alt="" height="30px" style="margin-top:-5px;margin-right:10px"></span>Avant la prestation</h4>
+                    <h4 style="margin-bottom:20px;margin-top:20px"><span><img src="favicon.png" alt="Entretien de jardins - Avant la prestation" height="30px" style="margin-top:-5px;margin-right:10px"></span>Avant la prestation</h4>
                     <!-- <div class="accordion-item">
                         <h2 class="mb-0">
                             <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq_compte2">
@@ -53,7 +53,7 @@
                     </div>
                     <!-- -->
 
-                    <h4 style="margin-bottom:20px;margin-top:40px"><span><img src="favicon.png" alt="" height="30px" style="margin-top:-5px;margin-right:10px"></span>Pendant la prestation</h4>
+                    <h4 style="margin-bottom:20px;margin-top:40px"><span><img src="favicon.png" alt="Entretien de jardins - Pendant la prestation" height="30px" style="margin-top:-5px;margin-right:10px"></span>Pendant la prestation</h4>
                     <div class="accordion-item">
                         <h2 class="mb-0">
                             <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#faq_photo2">
@@ -96,7 +96,7 @@
                             </div>
                         </div>
                     </div>
-                    <h4 style="margin-bottom:20px;margin-top:40px"><span><img src="favicon.png" alt="" height="30px" style="margin-top:-5px;margin-right:10px"></span>Après la prestation</h4>
+                    <h4 style="margin-bottom:20px;margin-top:40px"><span><img src="favicon.png" alt="Entretien de jardins - Après la prestation" height="30px" style="margin-top:-5px;margin-right:10px"></span>Après la prestation</h4>
                     <div class="accordion-item">
                         <h2 class="mb-0">
                             <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"

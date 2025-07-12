@@ -1,19 +1,9 @@
 RewriteEngine On
-RewriteBase /
 
-# Redirige toutes les requêtes non fichiers dossiers existants vers index.php
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+# Redirige www vers non-www
+RewriteCond %{HTTP_HOST} ^www\.ejeri\.fr [NC]
+RewriteRule ^(.*)$ https://ejeri.fr/$1 [L,R=301]
 
-# Gestion des erreurs personnalisées (404, 401, 403, 500)
-ErrorDocument 400 /public/error404.php
-ErrorDocument 401 /public/error401.php
-ErrorDocument 403 /public/error404.php
-ErrorDocument 404 /public/error404.php
-ErrorDocument 500 /public/error404.php
-
-# Sécurité : blocage de l'accès aux fichiers sensibles
-<FilesMatch "\.(env|json|lock|md|txt|csv|yml|yaml|ini|log|bak|sql)$">
-Require all denied
-</FilesMatch>
+# Force HTTPS (optionnel si tu veux tout en HTTPS)
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://ejeri.fr/$1 [L,R=301]

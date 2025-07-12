@@ -2,7 +2,7 @@
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>Nous contacter</h2>
-        <p><span><img src="assets/img/png/enooki_ico_noir.png" alt="" height="35px" style="margin-top:-5px;margin-right:10px"></span>Demande de devis ou de renseignements</p>
+        <p><span><img src="assets/img/png/enooki_ico_noir.png" alt="EJERI Jardins - Demande de devis gratuit" height="35px" style="margin-top:-5px;margin-right:10px"></span>Demande de devis ou de renseignements</p>
     </div><!-- End Section Title -->
     <div class="container" data-aos="fade" data-aos-delay="100">
 

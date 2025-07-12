@@ -39,5 +39,5 @@
             <use xlink:href="#wave-path" x="50" y="9"></use>
         </g>
     </svg> -->
-  <img src="assets/img/svg/grass_blanc_1.svg" alt="" srcset="" style="width:100%;margin: -50px 0px -1px auto">
+  <img src="assets/img/svg/grass_blanc_1.svg" alt="Fond - Entretien de jardins - Tonte, taille, désherbage, nettoyage" srcset="" style="width:100%;margin: -50px 0px -1px auto">
 </section>

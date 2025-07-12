@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ejeri.fr/sitemap.xml
+
+# Fichiers/dossiers à ne pas indexer
+Disallow: /admin/
+Disallow: /api/
+Disallow: /app/
+Disallow: /cli/
+Disallow: /manop/
+Disallow: /pro/
+Disallow: /vendor/
+Disallow: /shared/
+Disallow: /sql/
+Disallow: /config/
+Disallow: /logs/
+Disallow: /forms/
+Disallow: /utils/
+Disallow: /class/
+Disallow: *.log
+Disallow: *.php$
+Allow: /index.php
+
+# Autoriser les ressources importantes
+Allow: /assets/
+Allow: /sections/
+Allow: /public/
+Allow: /favicon.png
+Allow: /robots.txt
+Allow: /sitemap.xml

@@ -6,7 +6,7 @@
           <div class="col-lg-11">
             <div class="container section-title" data-aos="fade-up">
               <h2>Prestataire agrée</h2>
-              <p><span><img src="assets/img/png/enooki_ico_blanc.png" alt="" height="35px" style="margin-top:-5px;margin-right:10px"></span>100% entretien de jardins<br></p>
+              <p><span><img src="assets/img/png/enooki_ico_blanc.png" alt="Logo - EJERI Jardins - Notre spécialité l'entretien de jardins" height="35px" style="margin-top:-5px;margin-right:10px"></span>100% entretien de jardins<br></p>
             </div>
             <h1 class="hero-title mb-3" data-aos="fade-up" data-aos-delay="100">Entretien de jardins et réduction d'impôts</h1>
             <p class="hero-description mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="200">Profitez d'un service d'entretien de jardins professionnel et bénéficiez de 50% de réduction d'impôt grâce au dispositif SAP (Services à la Personne). Tonte, taille de haies, débroussaillage, désherbage : nous prenons soin de votre jardin toute l'année.</p>

@@ -1,7 +1,7 @@
 <section id="team" class="team section">
   <div class="container section-title" data-aos="fade-up">
     <h2>Votre contact local</h2>
-    <p><span><img src="favicon.png" alt="" height="35px" style="margin-top:-5px;margin-right:10px"></span>L'équipe de votre secteur</p>
+    <p><span><img src="favicon.png" alt="Entretien de jardins - Nantes Orléans - Cugand Lailly-en-Val - Lamotte-Beuvron" height="35px" style="margin-top:-5px;margin-right:10px"></span>L'équipe de votre secteur</p>
   </div>
 
   <div class="container">
@@ -35,7 +35,7 @@
     <!-- Zone d'affichage de l'équipe du secteur -->
     <div class="row gy-4" id="team-secteur">
       <!-- Le contenu sera chargé via JavaScript -->
-      <div class="col-4 mx-auto text-center">
+      <div class="col-md-6 col-sm-12 mx-auto text-center">
         <div class="card border-0 myshadow">
           <div class="card-body py-5">
             <i class="bi bi-geo-alt-fill text-muted mb-3" style="font-size: 3rem;"></i>
@@ -46,5 +46,5 @@
       </div>
     </div>
   </div>
-  <img src="assets/img/svg/grass_noir_1.svg" alt="" srcset="" style="width:100%;margin: -20px 0px -1px auto">
+  <img src="assets/img/svg/grass_noir_1.svg" alt="Fond - Entretien de jardins" srcset="" style="width:100%;margin: -20px 0px -1px auto">
 </section>
