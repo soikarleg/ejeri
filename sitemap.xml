@@ -38,7 +38,7 @@
     <priority>0.6</priority>
   </url>
 
-  <!-- Pages de services spécialisées -->
+  <!-- Pages de services spécialisées 
   <url>
     <loc>https://ejeri.fr/services/tonte-pelouse.html</loc>
     <lastmod>2025-07-08</lastmod>
@@ -59,6 +59,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
+-->
 
 </urlset>
