@@ -12,7 +12,7 @@ Disallow: /cli/
 Disallow: /manop/
 Disallow: /pro/
 Disallow: /vendor/
-Disallow: /shared/
+#Disallow: /shared/
 Disallow: /sql/
 Disallow: /config/
 Disallow: /logs/
@@ -24,9 +24,21 @@ Disallow: *.php$
 Allow: /index.php
 
 # Autoriser les ressources importantes
-Allow: /assets/
+Allow: /shared/assets/
 Allow: /sections/
 Allow: /public/
+Allow: /services/villes.html
+Allow: /services/villes/mios.php
+Allow: /services/villes/gujan-mestras.php
+Allow: /services/villes/ares.php
+Allow: /services/villes/saint-loubes.php
+Allow: /services/villes/ambares-et-lagrave.php
+Allow: /services/villes/bazas.php
+Allow: /services/villes/branne.php
+Allow: /services/villes/cadaujac.php
+Allow: /services/villes/captieux.php
+Allow: /services/villes/baule.php
+
 Allow: /favicon.png
 Allow: /robots.txt
 Allow: /sitemap.xml

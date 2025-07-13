@@ -9,7 +9,7 @@
   </p>-->
     <p id="slogan" class="text-bold text-center" style="margin-bottom:60px">Entretien de jardins et réduction d'impôts</p>
   </div>
-  <div id="cpform" class="input-group" style="margin-bottom:5px;margin-left:auto;margin-right:auto">
+  <!-- <div id="cpform" class="input-group" style="margin-bottom:5px;margin-left:auto;margin-right:auto">
     <input style="max-height:36px" type="text"
       id="code-postal"
       class="form-control"
@@ -18,9 +18,9 @@
       pattern="[0-9]{5}">
     <button class="devis-btn" type="button" id="btn-rechercher">
       <i class="bi bi-search"></i>
-      <!-- Code postal-->
+     
     </button>
-  </div>
+  </div> -->
   <p id="team-sec"></p>
   <a href="#services" class="devis-btn" style="margin-bottom:70px" onclick="document.getElementById('sujet').value = 'Demande de devis'">Nos prestations</a>
 

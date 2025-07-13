@@ -261,10 +261,10 @@ const equipesParSecteur = {
         contact: {
             nom: 'Loïc',
             telephone: '06 98 40 52 08',
-            email: 'loic@ejeri.fr',
-            adresse: '18C ROUTE DES NAVARRIES 33380 MIOS'
+            email: 'loic@coteservice.fr',
+            adresse: '18C Route des Navarries 33380 Mios'
         },
-        zone: 'Mios et un rayon de 25km (Loiret 45, Loir-et-Cher 41)',
+        zone: 'Mios et un rayon de 25km (Gironde 33)',
         specialites: ['Jardins privés', 'Espaces verts', 'Taille et élagage', 'Entretien saisonnier'],
         image: 'assets/img/enooki_photos/mios.png'
     },
@@ -272,8 +272,8 @@ const equipesParSecteur = {
         nom: 'EJERI Jardins - Nantes',
         description: 'Équipe spécialisée dans l\'entretien de jardins en région Pays de la Loire',
         contact: {
-            nom: 'Équipe Nantes',
-            telephone: 'Renaud au 06 59 23 80 28',
+            nom: 'Renaud',
+            telephone: '06 59 23 80 28',
             email: 'renaud@ejeri.fr',
             adresse: '15 Boulevard de la Prairie, 44000 Nantes'
         },

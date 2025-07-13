@@ -136,28 +136,9 @@ $_SESSION['token'] = $token;
 </head>
 
 <body class="index-page">
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-      <a href="/" class="logo d-flex align-items-center" aria-label="Accueil EJERI Jardins">
-        <img src="assets/img/logo/logo_ejeri.png" alt="Logo EJERI Jardins - Entretien de jardins et réduction d'impôts" height="120%">
-        <h1 class="visually-hidden">EJERI Jardins - Entretien de jardins et réduction d'impôts</h1>
-
-      </a>
-      <nav id="navmenu" class="navmenu" aria-label="Menu principal">
-        <ul>
-          <li><a href="#hero">Accueil</a></li>
-          <li><a href="#services">Nos prestations</a></li>
-          <li><a href="#team">Nos jardiniers</a></li>
-          <li><a href="#reduc">Réduction d'impôts</a></li>
-          <li><a href="#faq">Vos questions</a></li>
-          <!-- <li><a href="https://cli.ejeri.fr" class="client-btn">Espace client</a></li>-->
-          <!-- <li><a href=" https://pro.magesquo.com" target="_blank">Intervenant</a></li> -->
-          <!-- <li><a href="https://app.enooki.fr" target="_blank">Gestion</a></li>  -->
-        </ul>
-        <button class="mobile-nav-toggle d-xl-none" aria-label="Ouvrir le menu mobile"><i class="bi bi-list"></i></button>
-      </nav>
-    </div>
-  </header>
+  <?php
+  include 'sections/header.php';
+  ?>
   <main class="main" id="main-content">
     <?php
     include 'sections/hero2.php';
@@ -168,54 +149,9 @@ $_SESSION['token'] = $token;
     include 'sections/contact.php';
     ?>
   </main>
-  <footer id="footer" class="footer dark-background">
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-4">
-          <h2 class="sitename visually-hidden">EJERI Jardins - Footer</h2>
-          <img src="assets/img/logo/logo_ejeri.png" alt="Logo EJERI Jardins - Entretien de jardins - Clisson, Beaugency, Lamotte-Beuvron, Cholet, La Roche-sur-Yon" width="50%">
-          <p>Je ne sais pas... je ne peux pas !<br>EJERI Jardins le fait pour moi.</p>
-          <div class="social-links d-flex justify-content-center" aria-label="Réseaux sociaux">
-            <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" aria-label="Skype"><i class="bi bi-skype"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <nav class="q-links" aria-label="Liens rapides">
-            <a href="#hero"><i class="bi bi-patch-check"></i> Mentions légales</a>
-            <a href="#hero"><i class="bi bi-patch-check"></i> Conditions générales de vente</a>
-            <a href="#hero"><i class="bi bi-incognito"></i> Politique de confidentialité</a>
-          </nav>
-        </div>
-        <div class="col-lg-4">
-          <nav class="q-links" aria-label="Accès comptes">
-            <a href="https://cli.enooki.com" target="_blank" rel="noopener"><i class="bi bi-person-check"></i> Ouvrir un compte client</a>
-            <a href="https://pro.enooki.com" target="_blank" rel="noopener"><i class="bi bi-people-fill"></i> Devenir intervenant</a>
-            <a href="https://app.enooki.com" target="_blank" rel="noopener"><i class="bi bi-graph-up"></i> Application de gestion</a>
-          </nav>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-    </div>
-    <div class="container">
-      <div class="copyright">
-        <span>Copyright</span> <strong class="px-1 sitename">enooki</strong> <span>Tous droits réservés</span>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Conçu par <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a> Distribué par <a
-          href="https://themewagon.com" target="_blank">ThemeWagon</a>
-      </div>
-    </div>
-    </div>
-  </footer>
+  <?php
+  include 'sections/footer.php';
+  ?>
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>

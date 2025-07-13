@@ -693,10 +693,10 @@ background-color: var(--background-card-body);
 }
 
 .q-links {
-  text-align: center !important; /**/
+  text-align: left !important; /**/
   display: flex;
   justify-content: right !important;
-  align-items: center !important;
+  /* align-items: center !important; */
   flex-direction: column;
 }
 .q-links a {

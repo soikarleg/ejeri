@@ -61,4 +61,18 @@
   </url>
 -->
 
+  <!-- Nouvelle page ajoutée -->
+  <url>
+    <loc>https://ejeri.fr/services/villes.php</loc>
+    <lastmod>2025-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ejeri.fr/services/villes/mios.php</loc>
+    <lastmod>2025-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
