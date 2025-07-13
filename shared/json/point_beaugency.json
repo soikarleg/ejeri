@@ -1,0 +1,14 @@
+[
+  {"ville": "Baule", "cp": "45130", "departement": "Loiret"},
+  {"ville": "Cravant", "cp": "45190", "departement": "Loiret"},
+  {"ville": "Dry", "cp": "45370", "departement": "Loiret"},
+  {"ville": "Josnes", "cp": "41370", "departement": "Loir-et-Cher"},
+  {"ville": "Lailly-en-Val", "cp": "45740", "departement": "Loiret"},
+  {"ville": "Le Bardon", "cp": "45130", "departement": "Loiret"},
+  {"ville": "Lestiou", "cp": "41500", "departement": "Loir-et-Cher"},
+  {"ville": "Meung-sur-Loire", "cp": "45130", "departement": "Loiret"},
+  {"ville": "Messas", "cp": "45190", "departement": "Loiret"},
+  {"ville": "Saint-Laurent-Nouan", "cp": "41220", "departement": "Loir-et-Cher"},
+  {"ville": "Tavers", "cp": "45190", "departement": "Loiret"},
+  {"ville": "Villorceau", "cp": "45190", "departement": "Loiret"}
+]

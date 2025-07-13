@@ -1,0 +1,22 @@
+[
+  {"ville": "Bazas", "cp": "33430", "departement": "Gironde"},
+  {"ville": "Branne", "cp": "33420", "departement": "Gironde"},
+  {"ville": "Cadillac", "cp": "33410", "departement": "Gironde"},
+  {"ville": "Talence", "cp": "33400", "departement": "Gironde"},
+  {"ville": "Blaye", "cp": "33390", "departement": "Gironde"},
+  {"ville": "Latresne", "cp": "33360", "departement": "Gironde"},
+  {"ville": "Castillon-la-Bataille", "cp": "33350", "departement": "Gironde"},
+  {"ville": "Saint-Émilion", "cp": "33330", "departement": "Gironde"},
+  {"ville": "Eysines", "cp": "33320", "departement": "Gironde"},
+  {"ville": "Lormont", "cp": "33310", "departement": "Gironde"},
+  {"ville": "Bordeaux", "cp": "33300", "departement": "Gironde"},
+  {"ville": "Blanquefort", "cp": "33290", "departement": "Gironde"},
+  {"ville": "Bouliac", "cp": "33270", "departement": "Gironde"},
+  {"ville": "La Teste-de-Buch", "cp": "33260", "departement": "Gironde"},
+  {"ville": "Cissac-Médoc", "cp": "33250", "departement": "Gironde"},
+  {"ville": "Saint-André-de-Cubzac", "cp": "33240", "departement": "Gironde"},
+  {"ville": "Coutras", "cp": "33230", "departement": "Gironde"},
+  {"ville": "Sainte-Foy-la-Grande", "cp": "33220", "departement": "Gironde"},
+  {"ville": "Langon", "cp": "33210", "departement": "Gironde"},
+  {"ville": "Bordeaux Caudéran", "cp": "33200", "departement": "Gironde"}
+]

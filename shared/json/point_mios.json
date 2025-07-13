@@ -1,0 +1,20 @@
+[
+  {"ville": "Andernos‑les‑Bains", "cp": "33510", "departement": "Gironde"},
+  {"ville": "Arès", "cp": "33740", "departement": "Gironde"},
+  {"ville": "Arcachon", "cp": "33120", "departement": "Gironde"},
+  {"ville": "Audenge", "cp": "33980", "departement": "Gironde"},
+  {"ville": "Bélignac", "cp": null, "departement": "Non renseigné"},
+  {"ville": "Belin‑Béliet", "cp": "33830", "departement": "Gironde"},
+  {"ville": "Bigosans", "cp": null, "departement": "Non renseigné"},
+  {"ville": "Biganos", "cp": "33380", "departement": "Gironde"},
+  {"ville": "Gujan‑Mestras", "cp": "33470", "departement": "Gironde"},
+  {"ville": "La Teste‑de‑Buch", "cp": "33260", "departement": "Gironde"},
+  {"ville": "Le Barp", "cp": "33114", "departement": "Gironde"},
+  {"ville": "Le Teich", "cp": "33470", "departement": "Gironde"},
+  {"ville": "Lanton", "cp": "33138", "departement": "Gironde"},
+  {"ville": "Lugos", "cp": "33830", "departement": "Gironde"},
+  {"ville": "Marcheprime", "cp": "33380", "departement": "Gironde"},
+  {"ville": "Saint‑Magne", "cp": "33125", "departement": "Gironde"},
+  {"ville": "Salles", "cp": "33770", "departement": "Gironde"},
+  {"ville": "Sanguinet", "cp": "40460", "departement": "Landes"}
+]

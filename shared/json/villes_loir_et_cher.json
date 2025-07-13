@@ -1,0 +1,22 @@
+[
+  {"ville": "Blois", "cp": "41000", "departement": "Loir-et-Cher"},
+  {"ville": "Bracieux", "cp": "41250", "departement": "Loir-et-Cher"},
+  {"ville": "Chambord", "cp": "41020", "departement": "Loir-et-Cher"},
+  {"ville": "Huisseau-sur-Cosson", "cp": "41350", "departement": "Loir-et-Cher"},
+  {"ville": "La Ferté-Beauharnais", "cp": "41210", "departement": "Loir-et-Cher"},
+  {"ville": "La Marolle-en-Sologne", "cp": "41210", "departement": "Loir-et-Cher"},
+  {"ville": "Lamotte-Beuvron", "cp": "41600", "departement": "Loir-et-Cher"},
+  {"ville": "Ligny-le-Ribault", "cp": "41210", "departement": "Loir-et-Cher"},
+  {"ville": "Marcilly-en-Gault", "cp": "41210", "departement": "Loir-et-Cher"},
+  {"ville": "Ménestreau-en-Villette", "cp": "41210", "departement": "Loir-et-Cher"},
+  {"ville": "Mer", "cp": "41500", "departement": "Loir-et-Cher"},
+  {"ville": "Montrieux-en-Sologne", "cp": "41210", "departement": "Loir-et-Cher"},
+  {"ville": "Neung-sur-Beuvron", "cp": "41210", "departement": "Loir-et-Cher"},
+  {"ville": "Nouan-le-Fuzelier", "cp": "41600", "departement": "Loir-et-Cher"},
+  {"ville": "Saint-Viâtre", "cp": "41210", "departement": "Loir-et-Cher"},
+  {"ville": "Salbris", "cp": "41300", "departement": "Loir-et-Cher"},
+  {"ville": "Soings-en-Sologne", "cp": "41230", "departement": "Loir-et-Cher"},
+  {"ville": "Villeny", "cp": "41210", "departement": "Loir-et-Cher"},
+  {"ville": "Vouzon", "cp": "41600", "departement": "Loir-et-Cher"},
+  {"ville": "Yvoy-le-Marron", "cp": "41230", "departement": "Loir-et-Cher"}
+]

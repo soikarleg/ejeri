@@ -7,7 +7,7 @@
   <meta name="description" content="Découvrez les villes couvertes par nos services de jardinage à domicile autour de ">
   <meta name="keywords" content="Mios, Gujan-Mestras, Arès, Saint-Loubès, jardinage, services à domicile, Gironde">
   <meta name="author" content="EJERI Jardins">
-  <title>EJERI Jardins - Villes couvertes</title>
+  <title>EJERI Jardins - Villes couvertes </title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="../shared/assets/css/enooki-mini.css">
@@ -427,6 +427,7 @@
                 }
               </script>
             </a>
+
             <li class="list-group-item">Bazas (33430)</li>
             <li class="list-group-item">Branne (33420)</li>
             <li class="list-group-item">Cadillac (33410)</li>
@@ -653,6 +654,23 @@
                 }
               </script>
             </a>
+            <li class="list-group-item"><i class="bi bi-geo-alt"></i> Baule (45370)</li>
+            <li class="list-group-item">Beaugency (45190)</li>
+            <li class="list-group-item">Chaingy (45380)</li>
+            <li class="list-group-item">Cléry-Saint-André (45370)</li>
+            <li class="list-group-item">Cravant (45130)</li>
+            <li class="list-group-item">Dry (45370)</li>
+            <li class="list-group-item">Ferté‑Saint‑Aubin (45400)</li>
+            <li class="list-group-item">Ingré (45140)</li>
+            <li class="list-group-item">Jouy‑le‑Potier (45370)</li>
+            <li class="list-group-item">Mareau‑aux‑Prés (45130)</li>
+            <li class="list-group-item">Meung‑sur‑Loire (45130)</li>
+            <li class="list-group-item">Messas (45190)</li>
+            <li class="list-group-item">Mézières‑lez‑Cléry (45370)</li>
+            <li class="list-group-item">Olivet (45160)</li>
+            <li class="list-group-item">Saint‑Laurent‑Nouan (41220)</li>
+            <li class="list-group-item">Tavers (45190)</li>
+            <li class="list-group-item">Villorceau (45190)</li>
           </ul>
         </div>
         <div class="col-md-4">

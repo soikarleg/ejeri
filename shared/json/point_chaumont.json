@@ -1,0 +1,12 @@
+[
+  {"ville": "La Ferté-Beauharnais", "cp": "41210", "departement": "Loir-et-Cher"},
+  {"ville": "La Ferté-Saint-Aubin", "cp": "45240", "departement": "Loiret"},
+  {"ville": "La Marolle-en-Sologne", "cp": "41210", "departement": "Loir-et-Cher"},
+  {"ville": "Lamotte-Beuvron", "cp": "41600", "departement": "Loir-et-Cher"},
+  {"ville": "Neung-sur-Beuvron", "cp": "41210", "departement": "Loir-et-Cher"},
+  {"ville": "Nouan-le-Fuzelier", "cp": "41600", "departement": "Loir-et-Cher"},
+  {"ville": "Saint-Viâtre", "cp": "41210", "departement": "Loir-et-Cher"},
+  {"ville": "Villeny", "cp": "41220", "departement": "Loir-et-Cher"},
+  {"ville": "Vouzon", "cp": "41600", "departement": "Loir-et-Cher"},
+  {"ville": "Yvoy-le-Marron", "cp": "41600", "departement": "Loir-et-Cher"}
+]
