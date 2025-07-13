@@ -5,6 +5,32 @@
 
 // Données des secteurs par code postal
 const secteursParCodePostal = {
+
+    '33380': { secteur: 'bordeaux', nom: 'Mios' }, // Mios
+'33470': { secteur: 'bordeaux', nom: 'Gujan-Mestras' }, // Gujan-Mestras
+'33460': { secteur: 'bordeaux', nom: 'Arès' }, // Arès
+'33450': { secteur: 'bordeaux', nom: 'Saint-Loubès' }, // Saint-Loubès
+'33440': { secteur: 'bordeaux', nom: 'Ambarès-et-Lagrave' }, // Ambarès-et-Lagrave
+'33430': { secteur: 'bordeaux', nom: 'Bazas' }, // Bazas
+'33420': { secteur: 'bordeaux', nom: 'Branne' }, // Branne
+'33410': { secteur: 'bordeaux', nom: 'Cadillac' }, // Cadillac
+'33400': { secteur: 'bordeaux', nom: 'Talence' }, // Talence
+'33390': { secteur: 'bordeaux', nom: 'Blaye' }, // Blaye
+'33360': { secteur: 'bordeaux', nom: 'Latresne' }, // Latresne
+'33350': { secteur: 'bordeaux', nom: 'Castillon-la-Bataille' }, // Castillon-la-Bataille
+'33330': { secteur: 'bordeaux', nom: 'Saint-Émilion' }, // Saint-Émilion
+'33320': { secteur: 'bordeaux', nom: 'Eysines' }, // Eysines
+'33310': { secteur: 'bordeaux', nom: 'Lormont' }, // Lormont
+'33300': { secteur: 'bordeaux', nom: 'Bordeaux' }, // Bordeaux
+'33290': { secteur: 'bordeaux', nom: 'Blanquefort' }, // Blanquefort
+'33270': { secteur: 'bordeaux', nom: 'Bouliac' }, // Bouliac
+'33260': { secteur: 'bordeaux', nom: 'La Teste-de-Buch' }, // La Teste-de-Buch
+'33250': { secteur: 'bordeaux', nom: 'Cissac-Médoc' }, // Cissac-Médoc
+'33240': { secteur: 'bordeaux', nom: 'Saint-André-de-Cubzac' }, // Saint-André-de-Cubzac
+'33230': { secteur: 'bordeaux', nom: 'Coutras' }, // Coutras
+'33220': { secteur: 'bordeaux', nom: 'Sainte-Foy-la-Grande' }, // Sainte-Foy-la-Grande
+'33210': { secteur: 'bordeaux', nom: 'Langon' }, // Langon
+'33200': { secteur: 'bordeaux', nom: 'Bordeaux Caudéran' }, // Bordeaux Caudéran
     // Secteur EJERI Jardins - Orléans (Lailly-en-Val, Lamotte-Beuvron et 25km autour)
     // Loiret (45)
     '45000': { secteur: 'orleans', nom: 'Orléans' }, // Orléans
@@ -60,7 +86,8 @@ const secteursParCodePostal = {
     '41230': { secteur: 'orleans', nom: 'Soings-en-Sologne' }, // Soings-en-Sologne
     '41250': { secteur: 'orleans', nom: 'Bracieux' }, // Bracieux
     '41300': { secteur: 'orleans', nom: 'Salbris' }, // Salbris
-    '41350': { secteur: 'orleans', nom: 'Huisseau-sur-Cosson' }, // Huisseau-sur-Cosson
+    '41350': { secteur: 'orleans', nom: 'Huisseau-sur-Cosson' },
+    '41500': { secteur: 'orleans', nom: 'Mer' }, // Mer
     '41600': { secteur: 'orleans', nom: 'Lamotte-Beuvron' }, // Lamotte-Beuvron
     
     // Secteur EJERI Jardins - Nantes (Cugand, Cholet, La Roche-sur-Yon et 25km autour)
@@ -216,17 +243,30 @@ const secteursParCodePostal = {
 // Données des équipes par secteur
 const equipesParSecteur = {
     'orleans': {
-        nom: 'EJERI Jardins - Orléans',
+        nom: 'EJERI Jardins - Val de Loire',
         description: 'Équipe spécialisée dans l\'entretien de jardins en région Centre-Val de Loire',
         contact: {
             nom: 'François',
-            telephone: 'François au 02 38 45 15 78',
-            email: 'orleans@ejeri.fr',
+            telephone: '02 38 45 15 78',
+            email: 'francois@ejeri.fr',
             adresse: '12 Rue de la République, 45000 Orléans'
         },
-        zone: 'Orléans et un rayon de 25km (Loiret 45, Loir-et-Cher 41)',
+        zone: 'Beaugency et un rayon de 25km (Loiret 45, Loir-et-Cher 41)',
         specialites: ['Jardins privés', 'Espaces verts', 'Taille et élagage', 'Entretien saisonnier'],
-        image: 'assets/img/team/team-orleans.jpg'
+        image: 'assets/img/enooki_photos/beaugency.png'
+    },
+    'bordeaux': {
+        nom: 'EJERI Jardins - Mios',
+        description: 'Équipe spécialisée dans l\'entretien de jardins en région Nouvelle-Aquitaine',
+        contact: {
+            nom: 'Loïc',
+            telephone: '06 98 40 52 08',
+            email: 'loic@ejeri.fr',
+            adresse: '18C ROUTE DES NAVARRIES 33380 MIOS'
+        },
+        zone: 'Mios et un rayon de 25km (Loiret 45, Loir-et-Cher 41)',
+        specialites: ['Jardins privés', 'Espaces verts', 'Taille et élagage', 'Entretien saisonnier'],
+        image: 'assets/img/enooki_photos/mios.png'
     },
     'nantes': {
         nom: 'EJERI Jardins - Nantes',
@@ -248,7 +288,7 @@ const equipesParSecteur = {
             nom: 'Service Client EJERI',
             telephone: 'François au 02 38 45 15 78',
             email: 'francois@ejeri.fr',
-            adresse: '12 Rue de la République, 45000 Orléans'
+            adresse: '3 place de l\'Eglise, 45740 Lailly-en-Val'
         },
         zone: 'Toute la France et régions limitrophes',
         specialites: ['Tous types de jardins', 'Devis gratuit', 'Intervention rapide'],
@@ -292,16 +332,21 @@ function rechercherEquipeParCodePostal(codePostal) {
 function afficherEquipe(equipe, codePostal) {
     const teamSecteur = document.getElementById('team-secteur');
     const teamSec = document.getElementById('team-sec');
+    const adrSec = document.getElementById('secteur-adresse');
+    const cpSec = document.getElementById('cp_form');
     //<h6><i class="bi bi-geo-alt text-primary me-2"></i></h6>
+    const cp = codePostal;
     const ht =`
     <div class="text-center mb-3">
     
     <p class="small" style="width:100vh">${equipe.nom}<br>
-    ${equipe.contact.telephone}</p>
+    ${equipe.contact.telephone}<br>
+    ${equipe.contact.email}
+    </p>
     </div>`;
 
     const html = `
-        <div class="col-lg-8 mx-auto">
+        <!--<div class="col-lg-8 mx-auto">
             <div class="card border-0 myshadow">
                 <div class="card-body p-4">
                     <div class="row">
@@ -327,10 +372,11 @@ function afficherEquipe(equipe, codePostal) {
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         
-        <div class="col-lg-4">
+        <div class="col-lg-4 mx-md-auto text-center">
             <div class="card border-0 myshadow h-100">
+             <img src="${equipe.image}" class="card-img-top" alt="Intervention Journée, demi-journée" />
                 <div class="card-body">
                     <h5 class="card-title text-primary">
                         <i class="bi bi-person-lines-fill me-2"></i>Votre contact
@@ -355,10 +401,10 @@ function afficherEquipe(equipe, codePostal) {
                             </a>
                         </div>
                         
-                        <div class="mb-3">
+                      <!---  <div class="mb-3">
                             <i class="bi bi-geo-alt text-primary me-2"></i>
                             <span class="small">${equipe.contact.adresse}</span>
-                        </div>
+                        </div>--->
                         
                         <hr>
                         
@@ -375,8 +421,9 @@ function afficherEquipe(equipe, codePostal) {
             </div>
         </div>
     `;
-    
+    cpSec.innerHTML = cp;
     teamSecteur.innerHTML = html;
+    adrSec.innerHTML = html;
     teamSec.innerHTML = ht;
     
     // Animation d'apparition

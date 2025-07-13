@@ -24,7 +24,7 @@
                             <input type="text" class="form-control" name="telephone" placeholder="Téléphone">
                         </div>
                         <div class="col-md-6 ">
-                            <input type="text" class="form-control" name="code_postal" placeholder="Code postal">
+                            <input type="text" class="form-control" id="cp_form"name="code_postal" placeholder="Code postal">
                         </div>
                         <div class="col-md-12">
                             <input type="text" class="form-control" name="sujet" id="sujet" placeholder="Sujet" required="">
@@ -56,7 +56,6 @@
                         </div>
                     </div>
                 </div>-->
-
                 <!-- Informations générales -->
                 <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                     <i class="bi bi-geo-alt flex-shrink-0"></i>
