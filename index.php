@@ -110,7 +110,7 @@ $_SESSION['token'] = $token;
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!---->
-  <link href="/shared/assets/css/enooki-mini.css" rel="stylesheet">
+  <link href="/shared/assets/css/enooki-min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -119,7 +119,7 @@ $_SESSION['token'] = $token;
 
   <!-- Preload des ressources critiques -->
   <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style">
-  <link rel="preload" href="/shared/assets/css/enooki-mini.css" as="style">
+  <link rel="preload" href="/shared/assets/css/enooki-min.css?time=<?=time()?>" as="style">
   <link rel="preload" href="assets/img/logo/logo_ejeri.png" as="image">
 
   <!-- MDB 
@@ -177,7 +177,7 @@ $_SESSION['token'] = $token;
   <!-- <script src="/shared/assets/js/secteur-geolocalisation-stable.js"></script> -->
 
   <!-- Recherche équipe par code postal -->
-  <script src="/shared/assets/js/teamlocal-codepostal.js"></script>
+  <script src="/shared/assets/js/teamlocal-codepostal.js?time=<?=time()?>"></script>
 </body>
 
 </html>

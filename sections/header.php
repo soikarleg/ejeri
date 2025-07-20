@@ -3,7 +3,6 @@
       <a href="/" class="logo d-flex align-items-center" aria-label="Accueil EJERI Jardins">
         <img src="../assets/img/logo/logo_ejeri.png" alt="Logo EJERI Jardins - Entretien de jardins et réduction d'impôts" height="120%">
         <h1 class="visually-hidden">EJERI Jardins - Entretien de jardins et réduction d'impôts</h1>
-
       </a>
       <nav id="navmenu" class="navmenu" aria-label="Menu principal">
         <ul>

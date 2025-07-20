@@ -10,11 +10,46 @@
   <title>EJERI Jardins - Villes couvertes </title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="../shared/assets/css/enooki-mini.css">
+  <link rel="stylesheet" href="../shared/assets/css/enooki-min.css">
 </head>
 
 <body>
+  <?php
+  // Charger les données du fichier point_cugand.json
+  $point_cugand_file = '../shared/json/point_cugand.json';
+  $point_cugand_data = [];
 
+  if (file_exists($point_cugand_file)) {
+    $json_content = file_get_contents($point_cugand_file);
+    $point_cugand_data = json_decode($json_content, true);
+    if (json_last_error() !== JSON_ERROR_NONE) {
+      $point_cugand_data = [];
+    }
+  }
+
+  $point_beaugency_file = '../shared/json/point_beaugency.json';
+  $point_beaugency_data = [];
+
+  if (file_exists($point_beaugency_file)) {
+    $json_content = file_get_contents($point_beaugency_file);
+    $point_beaugency_data = json_decode($json_content, true);
+    if (json_last_error() !== JSON_ERROR_NONE) {
+      $point_beaugency_data = [];
+    }
+  }
+
+  $point_chaumont_file = '../shared/json/point_chaumont.json';
+  $point_chaumont_data = [];
+
+  if (file_exists($point_chaumont_file)) {
+    $json_content = file_get_contents($point_chaumont_file);
+    $point_chaumont_data = json_decode($json_content, true);
+    if (json_last_error() !== JSON_ERROR_NONE) {
+      $point_chaumont_data = [];
+    }
+  }
+  // Pour débogage, à supprimer en production
+  ?>
   <header class="bg-dark text-white text-center py-5">
     <h1>Villes couvertes par nos services</h1>
     <p>Découvrez les villes où nous proposons nos services de jardinage à domicile.</p>
@@ -24,7 +59,7 @@
 
     <section>
       <div class="row">
-        <div class="col-md-4">
+        <!-- <div class="col-lg-3 col-md-6">
           <h2>Villes de Gironde</h2>
           <ul class="list-group">
             <a href="../services/villes/mios.php" title="Jardinier à Mios">
@@ -450,8 +485,8 @@
             <li class="list-group-item">Bordeaux Caudéran (33200)</li>
 
           </ul>
-        </div>
-        <div class="col-md-4">
+        </div> -->
+        <!-- <div class="col-lg-3 col-md-6">
           <h2>Loiret</h2>
           <ul class="list-group">
             <a href="../services/villes/baule.php" title="Jardinier à Baule">
@@ -672,8 +707,8 @@
             <li class="list-group-item">Tavers (45190)</li>
             <li class="list-group-item">Villorceau (45190)</li>
           </ul>
-        </div>
-        <div class="col-md-4">
+        </div> -->
+        <!-- <div class="col-lg-3 col-md-6">
           <h2>Loir et Cher</h2>
           <ul class="list-group">
             <li class="list-group-item">Blois (41000)</li>
@@ -698,7 +733,102 @@
             <li class="list-group-item">Vouzon (41600)</li>
             <li class="list-group-item">Yvoy‑le‑Marron (41230)</li>
           </ul>
-        </div>
+        </div> -->
+
+        <?php if (!empty($point_cugand_data)): ?>
+          <div class="col-lg-4 col-md-6">
+            <h2>EJERI Jardins<br>Cugand</h2>
+            <ul class="list-group">
+              <?php foreach ($point_cugand_data as $ville): ?>
+                <a href="../services/villes/<?= strtolower(str_replace([' ', '-', 'é', 'è', 'à', 'ô', 'ç'], ['', '', 'e', 'e', 'a', 'o', 'c'], htmlspecialchars($ville['ville']))) ?>.php" title="Jardinier à <?= htmlspecialchars($ville['ville']) ?>">
+                  <li class="list-group-item">
+                    <i class="bi bi-geo-alt" alt="Entretien de jardin à <?= htmlspecialchars($ville['ville']) ?>"></i>
+                    <?= htmlspecialchars($ville['ville']) ?> (<?= htmlspecialchars($ville['cp']) ?>)
+                    <p class="small">Tonte, taille de haies et d'arbustes à <?= htmlspecialchars($ville['ville']) ?></p>
+                  </li>
+                  <script type="application/ld+json">
+                    {
+                      "@context": "https://schema.org",
+                      "@type": "LocalBusiness",
+                      "name": "EJERI Jardins - <?= htmlspecialchars($ville['ville']) ?>",
+                      "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "<?= htmlspecialchars($ville['ville']) ?>",
+                        "postalCode": "<?= htmlspecialchars($ville['cp']) ?>",
+                        "addressCountry": "FR"
+                      },
+                      "areaServed": "<?= htmlspecialchars($ville['ville']) ?> et ses environs",
+                      "description": "EJERI Jardins - Entretien de jardin à <?= htmlspecialchars($ville['ville']) ?>"
+                    }
+                  </script>
+                </a>
+              <?php endforeach; ?>
+            </ul>
+          </div>
+        <?php endif; ?>
+        <?php if (!empty($point_beaugency_data)): ?>
+          <div class="col-lg-4 col-md-6">
+            <h2>EJERI Jardins<br>Lailly-en-Val</h2>
+            <ul class="list-group">
+              <?php foreach ($point_beaugency_data as $ville): ?>
+                <a href="../services/villes/<?= strtolower(str_replace([' ', '-', 'é', 'è', 'à', 'ô', 'ç'], ['', '', 'e', 'e', 'a', 'o', 'c'], htmlspecialchars($ville['ville']))) ?>.php" title="Jardinier à <?= htmlspecialchars($ville['ville']) ?>">
+                  <li class="list-group-item">
+                    <i class="bi bi-geo-alt" alt="Entretien de jardin à <?= htmlspecialchars($ville['ville']) ?>"></i>
+                    <?= htmlspecialchars($ville['ville']) ?> (<?= htmlspecialchars($ville['cp']) ?>)
+                    <p class="small">Tonte, taille de haies et d'arbustes à <?= htmlspecialchars($ville['ville']) ?></p>
+                  </li>
+                  <script type="application/ld+json">
+                    {
+                      "@context": "https://schema.org",
+                      "@type": "LocalBusiness",
+                      "name": "EJERI Jardins - <?= htmlspecialchars($ville['ville']) ?>",
+                      "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "<?= htmlspecialchars($ville['ville']) ?>",
+                        "postalCode": "<?= htmlspecialchars($ville['cp']) ?>",
+                        "addressCountry": "FR"
+                      },
+                      "areaServed": "<?= htmlspecialchars($ville['ville']) ?> et ses environs",
+                      "description": "EJERI Jardins - Entretien de jardin à <?= htmlspecialchars($ville['ville']) ?>"
+                    }
+                  </script>
+                </a>
+              <?php endforeach; ?>
+            </ul>
+          </div>
+        <?php endif; ?>
+        <?php if (!empty($point_chaumont_data)): ?>
+          <div class="col-lg-4 col-md-6">
+            <h2>EJERI Jardins<br>Chaumont-sur-Tharonne</h2>
+            <ul class="list-group">
+              <?php foreach ($point_chaumont_data as $ville): ?>
+                <a href="../services/villes/<?= strtolower(str_replace([' ', '-', 'é', 'è', 'à', 'ô', 'ç'], ['', '', 'e', 'e', 'a', 'o', 'c'], htmlspecialchars($ville['ville']))) ?>.php" title="Jardinier à <?= htmlspecialchars($ville['ville']) ?>">
+                  <li class="list-group-item">
+                    <i class="bi bi-geo-alt" alt="Entretien de jardin à <?= htmlspecialchars($ville['ville']) ?>"></i>
+                    <?= htmlspecialchars($ville['ville']) ?> (<?= htmlspecialchars($ville['cp']) ?>)
+                    <p class="small">Tonte, taille de haies et d'arbustes à <?= htmlspecialchars($ville['ville']) ?></p>
+                  </li>
+                  <script type="application/ld+json">
+                    {
+                      "@context": "https://schema.org",
+                      "@type": "LocalBusiness",
+                      "name": "EJERI Jardins - <?= htmlspecialchars($ville['ville']) ?>",
+                      "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "<?= htmlspecialchars($ville['ville']) ?>",
+                        "postalCode": "<?= htmlspecialchars($ville['cp']) ?>",
+                        "addressCountry": "FR"
+                      },
+                      "areaServed": "<?= htmlspecialchars($ville['ville']) ?> et ses environs",
+                      "description": "EJERI Jardins - Entretien de jardin à <?= htmlspecialchars($ville['ville']) ?>"
+                    }
+                  </script>
+                </a>
+              <?php endforeach; ?>
+            </ul>
+          </div>
+        <?php endif; ?>
+
         <!-- <div class="col-md-4"><h2>Vendée</h2>
     <ul class="list-group">
       <li class="list-group-item">Mios (33380)</li>
