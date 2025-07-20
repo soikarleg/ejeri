@@ -15,9 +15,9 @@
        </div>
        <div class="col-lg-3">
          <nav class="q-links" aria-label="Liens rapides">
-           <a href="#hero"><i class="bi bi-patch-check"></i> Mentions légales</a>
-           <a href="#hero"><i class="bi bi-patch-check"></i> Conditions générales de vente</a>
-           <a href="#hero"><i class="bi bi-incognito"></i> Politique de confidentialité</a>
+           <a href="https://ejeri.fr/legal/mention.php"><i class="bi bi-patch-check"></i> Mentions légales</a>
+           <a href="https://ejeri.fr/legal/cgv.php"><i class="bi bi-patch-check"></i> Conditions générales de vente</a>
+           <a href="https://ejeri.fr/legal/confidentialite.php"><i class="bi bi-incognito"></i> Politique de confidentialité</a>
          </nav>
        </div>
        <div class="col-lg-3">
